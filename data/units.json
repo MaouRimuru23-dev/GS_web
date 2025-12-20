@@ -1,0 +1,3341 @@
+[
+  {
+    "id": 477,
+    "unit_id": 1352,
+    "nombre_jp": "エチカ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1352.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/477"
+  },
+  {
+    "id": 476,
+    "unit_id": 1350,
+    "nombre_jp": "アンリエッタ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1350.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/476"
+  },
+  {
+    "id": 475,
+    "unit_id": 1348,
+    "nombre_jp": "ハイランダー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1348.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/475"
+  },
+  {
+    "id": 474,
+    "unit_id": 1346,
+    "nombre_jp": "アトラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1346.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/474"
+  },
+  {
+    "id": 473,
+    "unit_id": 1344,
+    "nombre_jp": "ワールドエンド・レオーネ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1344.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/473"
+  },
+  {
+    "id": 472,
+    "unit_id": 1342,
+    "nombre_jp": "シャウラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1342.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/472"
+  },
+  {
+    "id": 471,
+    "unit_id": 1340,
+    "nombre_jp": "ジジ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1340.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/471"
+  },
+  {
+    "id": 470,
+    "unit_id": 1338,
+    "nombre_jp": "アイラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1338.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/470"
+  },
+  {
+    "id": 469,
+    "unit_id": 1336,
+    "nombre_jp": "オカルン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1336.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/469"
+  },
+  {
+    "id": 468,
+    "unit_id": 1334,
+    "nombre_jp": "モモ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1334.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/468"
+  },
+  {
+    "id": 467,
+    "unit_id": 1332,
+    "nombre_jp": "ゼファー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1332.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/467"
+  },
+  {
+    "id": 466,
+    "unit_id": 1330,
+    "nombre_jp": "ユナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1330.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/466"
+  },
+  {
+    "id": 465,
+    "unit_id": 1328,
+    "nombre_jp": "ユーベル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1328.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/465"
+  },
+  {
+    "id": 464,
+    "unit_id": 1326,
+    "nombre_jp": "フェルン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1326.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/464"
+  },
+  {
+    "id": 463,
+    "unit_id": 1324,
+    "nombre_jp": "シュタルク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1324.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/463"
+  },
+  {
+    "id": 462,
+    "unit_id": 1322,
+    "nombre_jp": "フリーレン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1322.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/462"
+  },
+  {
+    "id": 461,
+    "unit_id": 1320,
+    "nombre_jp": "アクセラレータ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1320.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/461"
+  },
+  {
+    "id": 460,
+    "unit_id": 1318,
+    "nombre_jp": "インデックス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1318.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/460"
+  },
+  {
+    "id": 459,
+    "unit_id": 1316,
+    "nombre_jp": "御坂美琴",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1316.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/459"
+  },
+  {
+    "id": 458,
+    "unit_id": 1314,
+    "nombre_jp": "上条当麻",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1314.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/458"
+  },
+  {
+    "id": 457,
+    "unit_id": 1312,
+    "nombre_jp": "若きイスリーダ皇帝",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1312.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/457"
+  },
+  {
+    "id": 456,
+    "unit_id": 1310,
+    "nombre_jp": "ヒーロー サイタマ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1310.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/456"
+  },
+  {
+    "id": 455,
+    "unit_id": 1308,
+    "nombre_jp": "ヒューマ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1308.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/455"
+  },
+  {
+    "id": 454,
+    "unit_id": 1306,
+    "nombre_jp": "原典の魔女セリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1306.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/454"
+  },
+  {
+    "id": 453,
+    "unit_id": 1304,
+    "nombre_jp": "エレンス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1304.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/453"
+  },
+  {
+    "id": 452,
+    "unit_id": 1302,
+    "nombre_jp": "志々雄真実",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1302.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/452"
+  },
+  {
+    "id": 451,
+    "unit_id": 1300,
+    "nombre_jp": "斎藤一",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1300.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/451"
+  },
+  {
+    "id": 450,
+    "unit_id": 1298,
+    "nombre_jp": "相楽左之助",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1298.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/450"
+  },
+  {
+    "id": 449,
+    "unit_id": 1296,
+    "nombre_jp": "緋村剣心",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1296.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/449"
+  },
+  {
+    "id": 448,
+    "unit_id": 1294,
+    "nombre_jp": "ミゼット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1294.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/448"
+  },
+  {
+    "id": 447,
+    "unit_id": 1292,
+    "nombre_jp": "星章剣士ロゼッタ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1292.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/447"
+  },
+  {
+    "id": 446,
+    "unit_id": 1290,
+    "nombre_jp": "シズ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1290.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/446"
+  },
+  {
+    "id": 445,
+    "unit_id": 1288,
+    "nombre_jp": "ヴェルドラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1288.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/445"
+  },
+  {
+    "id": 444,
+    "unit_id": 1286,
+    "nombre_jp": "シュナ(和装ver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1286.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/444"
+  },
+  {
+    "id": 443,
+    "unit_id": 1284,
+    "nombre_jp": "魔王リムル(和装ver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1284.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/443"
+  },
+  {
+    "id": 442,
+    "unit_id": 1282,
+    "nombre_jp": "ミーナス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1282.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/442"
+  },
+  {
+    "id": 441,
+    "unit_id": 1280,
+    "nombre_jp": "超オーヴェル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1280.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/441"
+  },
+  {
+    "id": 440,
+    "unit_id": 1278,
+    "nombre_jp": "ナターシャ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1278.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/440"
+  },
+  {
+    "id": 439,
+    "unit_id": 1276,
+    "nombre_jp": "幻聖プラチナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1276.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/439"
+  },
+  {
+    "id": 438,
+    "unit_id": 1274,
+    "nombre_jp": "ヴェナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1274.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/438"
+  },
+  {
+    "id": 437,
+    "unit_id": 1272,
+    "nombre_jp": "デルタ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1272.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/437"
+  },
+  {
+    "id": 436,
+    "unit_id": 1270,
+    "nombre_jp": "アルファ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1270.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/436"
+  },
+  {
+    "id": 435,
+    "unit_id": 1268,
+    "nombre_jp": "ベータ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1268.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/435"
+  },
+  {
+    "id": 434,
+    "unit_id": 1266,
+    "nombre_jp": "シャドウ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1266.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/434"
+  },
+  {
+    "id": 433,
+    "unit_id": 1264,
+    "nombre_jp": "熾炎の小隊長シャルロット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1264.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/433"
+  },
+  {
+    "id": 432,
+    "unit_id": 1262,
+    "nombre_jp": "水着シーリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1262.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/432"
+  },
+  {
+    "id": 431,
+    "unit_id": 1260,
+    "nombre_jp": "水着ミラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1260.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/431"
+  },
+  {
+    "id": 430,
+    "unit_id": 1258,
+    "nombre_jp": "刀神ルアン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1258.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/430"
+  },
+  {
+    "id": 429,
+    "unit_id": 1256,
+    "nombre_jp": "水着間桐桜",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1256.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/429"
+  },
+  {
+    "id": 428,
+    "unit_id": 1254,
+    "nombre_jp": "水着イリヤ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1254.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/428"
+  },
+  {
+    "id": 427,
+    "unit_id": 1252,
+    "nombre_jp": "水着ルヴィア&凛",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1252.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/427"
+  },
+  {
+    "id": 426,
+    "unit_id": 1250,
+    "nombre_jp": "水着美遊",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1250.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/426"
+  },
+  {
+    "id": 425,
+    "unit_id": 1248,
+    "nombre_jp": "水着バゼット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1248.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/425"
+  },
+  {
+    "id": 424,
+    "unit_id": 1246,
+    "nombre_jp": "水着クロエ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1246.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/424"
+  },
+  {
+    "id": 423,
+    "unit_id": 1244,
+    "nombre_jp": "アズエル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1244.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/423"
+  },
+  {
+    "id": 422,
+    "unit_id": 1242,
+    "nombre_jp": "ヴェルザード",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1242.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/422"
+  },
+  {
+    "id": 421,
+    "unit_id": 1240,
+    "nombre_jp": "星剣使いヴァレリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1240.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/421"
+  },
+  {
+    "id": 420,
+    "unit_id": 1238,
+    "nombre_jp": "蛇崩 乃音",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1238.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/420"
+  },
+  {
+    "id": 419,
+    "unit_id": 1236,
+    "nombre_jp": "蟇郡 苛",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1236.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/419"
+  },
+  {
+    "id": 418,
+    "unit_id": 1234,
+    "nombre_jp": "犬牟田 宝火",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1234.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/418"
+  },
+  {
+    "id": 417,
+    "unit_id": 1232,
+    "nombre_jp": "猿投山 渦",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1232.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/417"
+  },
+  {
+    "id": 416,
+    "unit_id": 1230,
+    "nombre_jp": "エレノア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1230.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/416"
+  },
+  {
+    "id": 415,
+    "unit_id": 1228,
+    "nombre_jp": "ラーク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1228.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/415"
+  },
+  {
+    "id": 109,
+    "unit_id": 1226,
+    "nombre_jp": "超機動兵エドラム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1226.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/109"
+  },
+  {
+    "id": 414,
+    "unit_id": 1225,
+    "nombre_jp": "イビルアイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1225.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/414"
+  },
+  {
+    "id": 413,
+    "unit_id": 1223,
+    "nombre_jp": "デミウルゴス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1223.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/413"
+  },
+  {
+    "id": 412,
+    "unit_id": 1221,
+    "nombre_jp": "モモン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1221.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/412"
+  },
+  {
+    "id": 411,
+    "unit_id": 1219,
+    "nombre_jp": "バレンタインシスティーナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1219.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/411"
+  },
+  {
+    "id": 410,
+    "unit_id": 1217,
+    "nombre_jp": "バレンタインリザ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1217.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/410"
+  },
+  {
+    "id": 409,
+    "unit_id": 1215,
+    "nombre_jp": "虚構魔術士ハルト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1215.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/409"
+  },
+  {
+    "id": 408,
+    "unit_id": 1213,
+    "nombre_jp": "マーレット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1213.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/408"
+  },
+  {
+    "id": 407,
+    "unit_id": 1211,
+    "nombre_jp": "オイカッツォ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1211.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/407"
+  },
+  {
+    "id": 406,
+    "unit_id": 1209,
+    "nombre_jp": "ペンシルゴン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1209.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/406"
+  },
+  {
+    "id": 405,
+    "unit_id": 1207,
+    "nombre_jp": "サイガ-0",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1207.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/405"
+  },
+  {
+    "id": 404,
+    "unit_id": 1205,
+    "nombre_jp": "サンラク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1205.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/404"
+  },
+  {
+    "id": 403,
+    "unit_id": 1203,
+    "nombre_jp": "聖騎士ロイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1203.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/403"
+  },
+  {
+    "id": 402,
+    "unit_id": 1201,
+    "nombre_jp": "イビル・ポーラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1201.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/402"
+  },
+  {
+    "id": 401,
+    "unit_id": 1199,
+    "nombre_jp": "運命を超えしイスリーダ皇帝",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1199.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/401"
+  },
+  {
+    "id": 400,
+    "unit_id": 1197,
+    "nombre_jp": "ハロウィンヴァレリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1197.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/400"
+  },
+  {
+    "id": 399,
+    "unit_id": 1195,
+    "nombre_jp": "ハロウィンシャルロット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1195.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/399"
+  },
+  {
+    "id": 398,
+    "unit_id": 1193,
+    "nombre_jp": "ハロウィンフォルテ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1193.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/398"
+  },
+  {
+    "id": 397,
+    "unit_id": 1191,
+    "nombre_jp": "天主シーリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1191.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/397"
+  },
+  {
+    "id": 396,
+    "unit_id": 1189,
+    "nombre_jp": "ディアブロ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1189.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/396"
+  },
+  {
+    "id": 395,
+    "unit_id": 1187,
+    "nombre_jp": "ミリム戦闘形態",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1187.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/395"
+  },
+  {
+    "id": 394,
+    "unit_id": 1185,
+    "nombre_jp": "魔王リムル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1185.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/394"
+  },
+  {
+    "id": 393,
+    "unit_id": 1183,
+    "nombre_jp": "カナリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1183.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/393"
+  },
+  {
+    "id": 392,
+    "unit_id": 1181,
+    "nombre_jp": "水着ロゼッタ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1181.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/392"
+  },
+  {
+    "id": 391,
+    "unit_id": 1179,
+    "nombre_jp": "水着リヴィエラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1179.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/391"
+  },
+  {
+    "id": 390,
+    "unit_id": 1177,
+    "nombre_jp": "杠",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1177.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/390"
+  },
+  {
+    "id": 389,
+    "unit_id": 1175,
+    "nombre_jp": "亜左弔兵衛",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1175.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/389"
+  },
+  {
+    "id": 388,
+    "unit_id": 1173,
+    "nombre_jp": "山田浅ェ門佐切",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1173.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/388"
+  },
+  {
+    "id": 387,
+    "unit_id": 1171,
+    "nombre_jp": "画眉丸",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1171.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/387"
+  },
+  {
+    "id": 386,
+    "unit_id": 1169,
+    "nombre_jp": "水着イリス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1169.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/386"
+  },
+  {
+    "id": 385,
+    "unit_id": 1167,
+    "nombre_jp": "水着フェン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1167.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/385"
+  },
+  {
+    "id": 384,
+    "unit_id": 1165,
+    "nombre_jp": "ルアーナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1165.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/384"
+  },
+  {
+    "id": 383,
+    "unit_id": 1163,
+    "nombre_jp": "黒化英霊セイバー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1163.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/383"
+  },
+  {
+    "id": 382,
+    "unit_id": 1161,
+    "nombre_jp": "クロエ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1161.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/382"
+  },
+  {
+    "id": 381,
+    "unit_id": 1159,
+    "nombre_jp": "衛宮士郎",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1159.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/381"
+  },
+  {
+    "id": 380,
+    "unit_id": 1157,
+    "nombre_jp": "美遊",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1157.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/380"
+  },
+  {
+    "id": 379,
+    "unit_id": 1155,
+    "nombre_jp": "凛&ルヴィア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1155.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/379"
+  },
+  {
+    "id": 378,
+    "unit_id": 1153,
+    "nombre_jp": "イリヤ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1153.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/378"
+  },
+  {
+    "id": 377,
+    "unit_id": 1151,
+    "nombre_jp": "ジェイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1151.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/377"
+  },
+  {
+    "id": 376,
+    "unit_id": 1149,
+    "nombre_jp": "魔王ヴォックス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1149.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/376"
+  },
+  {
+    "id": 375,
+    "unit_id": 1147,
+    "nombre_jp": "コクリ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1147.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/375"
+  },
+  {
+    "id": 374,
+    "unit_id": 1145,
+    "nombre_jp": "アリステラ・オルビス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1145.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/374"
+  },
+  {
+    "id": 373,
+    "unit_id": 1143,
+    "nombre_jp": "烈華ミラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1143.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/373"
+  },
+  {
+    "id": 372,
+    "unit_id": 1141,
+    "nombre_jp": "バレンタインプリシラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1141.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/372"
+  },
+  {
+    "id": 371,
+    "unit_id": 1139,
+    "nombre_jp": "バレンタインミランダ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1139.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/371"
+  },
+  {
+    "id": 370,
+    "unit_id": 1137,
+    "nombre_jp": "ロン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1137.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/370"
+  },
+  {
+    "id": 369,
+    "unit_id": 1135,
+    "nombre_jp": "ナーベラル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1135.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/369"
+  },
+  {
+    "id": 368,
+    "unit_id": 1133,
+    "nombre_jp": "アインズ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1133.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/368"
+  },
+  {
+    "id": 367,
+    "unit_id": 1131,
+    "nombre_jp": "シャルティア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1131.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/367"
+  },
+  {
+    "id": 366,
+    "unit_id": 1129,
+    "nombre_jp": "アルベド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1129.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/366"
+  },
+  {
+    "id": 365,
+    "unit_id": 1127,
+    "nombre_jp": "神星リザ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1127.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/365"
+  },
+  {
+    "id": 364,
+    "unit_id": 1125,
+    "nombre_jp": "ハズキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1125.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/364"
+  },
+  {
+    "id": 363,
+    "unit_id": 1123,
+    "nombre_jp": "剣鬼ベリック",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1123.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/363"
+  },
+  {
+    "id": 362,
+    "unit_id": 1121,
+    "nombre_jp": "ハクロウ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1121.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/362"
+  },
+  {
+    "id": 361,
+    "unit_id": 1118,
+    "nombre_jp": "キリサメ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1118.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/361"
+  },
+  {
+    "id": 360,
+    "unit_id": 1116,
+    "nombre_jp": "軍神フェン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/1116.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/360"
+  },
+  {
+    "id": 359,
+    "unit_id": 952,
+    "nombre_jp": "ストレングス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/952.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/359"
+  },
+  {
+    "id": 358,
+    "unit_id": 950,
+    "nombre_jp": "デッドマスター",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/950.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/358"
+  },
+  {
+    "id": 357,
+    "unit_id": 948,
+    "nombre_jp": "エンプレス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/948.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/357"
+  },
+  {
+    "id": 356,
+    "unit_id": 946,
+    "nombre_jp": "三ツ谷",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/946.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/356"
+  },
+  {
+    "id": 355,
+    "unit_id": 944,
+    "nombre_jp": "千冬",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/944.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/355"
+  },
+  {
+    "id": 354,
+    "unit_id": 942,
+    "nombre_jp": "ドラケン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/942.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/354"
+  },
+  {
+    "id": 353,
+    "unit_id": 940,
+    "nombre_jp": "マイキー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/940.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/353"
+  },
+  {
+    "id": 352,
+    "unit_id": 938,
+    "nombre_jp": "タケミチ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/938.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/352"
+  },
+  {
+    "id": 351,
+    "unit_id": 935,
+    "nombre_jp": "フィトリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/935.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/351"
+  },
+  {
+    "id": 350,
+    "unit_id": 933,
+    "nombre_jp": "針目 縫",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/933.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/350"
+  },
+  {
+    "id": 349,
+    "unit_id": 931,
+    "nombre_jp": "エルザ・スカーレット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/931.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/349"
+  },
+  {
+    "id": 348,
+    "unit_id": 929,
+    "nombre_jp": "グレイ・フルバスター",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/929.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/348"
+  },
+  {
+    "id": 347,
+    "unit_id": 927,
+    "nombre_jp": "ルーシィ・ハートフィリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/927.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/347"
+  },
+  {
+    "id": 346,
+    "unit_id": 925,
+    "nombre_jp": "ナツ・ドラグニル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/925.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/346"
+  },
+  {
+    "id": 345,
+    "unit_id": 923,
+    "nombre_jp": "エリス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/923.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/345"
+  },
+  {
+    "id": 344,
+    "unit_id": 921,
+    "nombre_jp": "シルフィエット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/921.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/344"
+  },
+  {
+    "id": 343,
+    "unit_id": 919,
+    "nombre_jp": "ロキシー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/919.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/343"
+  },
+  {
+    "id": 342,
+    "unit_id": 917,
+    "nombre_jp": "ルーデウス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/917.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/342"
+  },
+  {
+    "id": 341,
+    "unit_id": 915,
+    "nombre_jp": "ハオ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/915.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/341"
+  },
+  {
+    "id": 340,
+    "unit_id": 913,
+    "nombre_jp": "道蓮",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/913.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/340"
+  },
+  {
+    "id": 339,
+    "unit_id": 911,
+    "nombre_jp": "恐山アンナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/911.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/339"
+  },
+  {
+    "id": 338,
+    "unit_id": 909,
+    "nombre_jp": "麻倉 葉",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/909.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/338"
+  },
+  {
+    "id": 337,
+    "unit_id": 907,
+    "nombre_jp": "桜ミク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/907.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/337"
+  },
+  {
+    "id": 336,
+    "unit_id": 905,
+    "nombre_jp": "初音ミク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/905.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/336"
+  },
+  {
+    "id": 335,
+    "unit_id": 903,
+    "nombre_jp": "ミリム(和装ver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/903.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/335"
+  },
+  {
+    "id": 334,
+    "unit_id": 901,
+    "nombre_jp": "リムル(和装ver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/901.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/334"
+  },
+  {
+    "id": 333,
+    "unit_id": 899,
+    "nombre_jp": "シオン(サンタver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/899.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/333"
+  },
+  {
+    "id": 332,
+    "unit_id": 897,
+    "nombre_jp": "ミリム(サンタver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/897.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/332"
+  },
+  {
+    "id": 331,
+    "unit_id": 895,
+    "nombre_jp": "リムル(サンタver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/895.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/331"
+  },
+  {
+    "id": 330,
+    "unit_id": 892,
+    "nombre_jp": "ベアトリス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/892.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/330"
+  },
+  {
+    "id": 329,
+    "unit_id": 890,
+    "nombre_jp": "ラム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/890.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/329"
+  },
+  {
+    "id": 328,
+    "unit_id": 888,
+    "nombre_jp": "レム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/888.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/328"
+  },
+  {
+    "id": 327,
+    "unit_id": 886,
+    "nombre_jp": "エミリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/886.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/327"
+  },
+  {
+    "id": 326,
+    "unit_id": 884,
+    "nombre_jp": "戸愚呂(弟)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/884.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/326"
+  },
+  {
+    "id": 325,
+    "unit_id": 882,
+    "nombre_jp": "飛影",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/882.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/325"
+  },
+  {
+    "id": 324,
+    "unit_id": 880,
+    "nombre_jp": "蔵馬",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/880.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/324"
+  },
+  {
+    "id": 323,
+    "unit_id": 878,
+    "nombre_jp": "桑原和真",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/878.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/323"
+  },
+  {
+    "id": 322,
+    "unit_id": 876,
+    "nombre_jp": "浦飯幽助",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/876.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/322"
+  },
+  {
+    "id": 321,
+    "unit_id": 874,
+    "nombre_jp": "メルティ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/874.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/321"
+  },
+  {
+    "id": 320,
+    "unit_id": 872,
+    "nombre_jp": "フィーロ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/872.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/320"
+  },
+  {
+    "id": 319,
+    "unit_id": 870,
+    "nombre_jp": "ラフタリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/870.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/319"
+  },
+  {
+    "id": 318,
+    "unit_id": 868,
+    "nombre_jp": "岩谷尚文",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/868.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/318"
+  },
+  {
+    "id": 317,
+    "unit_id": 865,
+    "nombre_jp": "ガロウ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/865.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/317"
+  },
+  {
+    "id": 316,
+    "unit_id": 863,
+    "nombre_jp": "地獄のフブキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/863.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/316"
+  },
+  {
+    "id": 315,
+    "unit_id": 861,
+    "nombre_jp": "音速のソニック",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/861.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/315"
+  },
+  {
+    "id": 314,
+    "unit_id": 859,
+    "nombre_jp": "妖精弓手",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/859.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/314"
+  },
+  {
+    "id": 313,
+    "unit_id": 857,
+    "nombre_jp": "女神官",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/857.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/313"
+  },
+  {
+    "id": 312,
+    "unit_id": 855,
+    "nombre_jp": "ゴブリンスレイヤー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/855.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/312"
+  },
+  {
+    "id": 311,
+    "unit_id": 853,
+    "nombre_jp": "ベニマル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/853.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/311"
+  },
+  {
+    "id": 310,
+    "unit_id": 851,
+    "nombre_jp": "ミリム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/851.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/310"
+  },
+  {
+    "id": 309,
+    "unit_id": 849,
+    "nombre_jp": "リムル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/849.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/309"
+  },
+  {
+    "id": 308,
+    "unit_id": 847,
+    "nombre_jp": "リムル(スライムver)",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/847.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/308"
+  },
+  {
+    "id": 307,
+    "unit_id": 844,
+    "nombre_jp": "土方歳三",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/844.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/307"
+  },
+  {
+    "id": 306,
+    "unit_id": 841,
+    "nombre_jp": "アシㇼパ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/841.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/306"
+  },
+  {
+    "id": 305,
+    "unit_id": 839,
+    "nombre_jp": "杉元佐一",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/839.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/305"
+  },
+  {
+    "id": 304,
+    "unit_id": 837,
+    "nombre_jp": "ボロス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/837.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/304"
+  },
+  {
+    "id": 303,
+    "unit_id": 834,
+    "nombre_jp": "戦慄のタツマキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/834.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/303"
+  },
+  {
+    "id": 302,
+    "unit_id": 832,
+    "nombre_jp": "ジェノス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/832.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/302"
+  },
+  {
+    "id": 301,
+    "unit_id": 830,
+    "nombre_jp": "サイタマ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/830.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/301"
+  },
+  {
+    "id": 300,
+    "unit_id": 828,
+    "nombre_jp": "レウスネコ・アイルー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/828.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/300"
+  },
+  {
+    "id": 299,
+    "unit_id": 826,
+    "nombre_jp": "カティ・ソフィ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/826.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/299"
+  },
+  {
+    "id": 298,
+    "unit_id": 824,
+    "nombre_jp": "キリンR・リーゼ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/824.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/298"
+  },
+  {
+    "id": 297,
+    "unit_id": 822,
+    "nombre_jp": "カイザーX・ガナン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/822.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/297"
+  },
+  {
+    "id": 296,
+    "unit_id": 820,
+    "nombre_jp": "レイアR・イリス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/820.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/296"
+  },
+  {
+    "id": 295,
+    "unit_id": 818,
+    "nombre_jp": "ミツネS・ロイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/818.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/295"
+  },
+  {
+    "id": 294,
+    "unit_id": 816,
+    "nombre_jp": "ジンオウX・レイアス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/816.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/294"
+  },
+  {
+    "id": 293,
+    "unit_id": 764,
+    "nombre_jp": "かき鳴らす熱狂コスモ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/764.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/293"
+  },
+  {
+    "id": 292,
+    "unit_id": 762,
+    "nombre_jp": "水着リザ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/762.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/292"
+  },
+  {
+    "id": 291,
+    "unit_id": 760,
+    "nombre_jp": "水着システィーナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/760.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/291"
+  },
+  {
+    "id": 290,
+    "unit_id": 758,
+    "nombre_jp": "セティス【天地】",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/758.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/290"
+  },
+  {
+    "id": 289,
+    "unit_id": 756,
+    "nombre_jp": "リヴィエラ【深淵】",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/756.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/289"
+  },
+  {
+    "id": 288,
+    "unit_id": 754,
+    "nombre_jp": "サクヤ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/754.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/288"
+  },
+  {
+    "id": 287,
+    "unit_id": 752,
+    "nombre_jp": "ギンゾウ＜陣備え＞",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/752.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/287"
+  },
+  {
+    "id": 286,
+    "unit_id": 749,
+    "nombre_jp": "十二代目ミズキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/749.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/286"
+  },
+  {
+    "id": 285,
+    "unit_id": 747,
+    "nombre_jp": "ヴァレリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/747.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/285"
+  },
+  {
+    "id": 284,
+    "unit_id": 745,
+    "nombre_jp": "シャルロット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/745.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/284"
+  },
+  {
+    "id": 283,
+    "unit_id": 743,
+    "nombre_jp": "星槍の翼神システィーナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/743.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/283"
+  },
+  {
+    "id": 282,
+    "unit_id": 741,
+    "nombre_jp": "焔刃の鬼神オーヴェル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/741.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/282"
+  },
+  {
+    "id": 281,
+    "unit_id": 739,
+    "nombre_jp": "彩忍ロゼッタ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/739.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/281"
+  },
+  {
+    "id": 280,
+    "unit_id": 737,
+    "nombre_jp": "うそつきセリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/737.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/280"
+  },
+  {
+    "id": 279,
+    "unit_id": 735,
+    "nombre_jp": "イスリーダ皇帝",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/735.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/279"
+  },
+  {
+    "id": 278,
+    "unit_id": 733,
+    "nombre_jp": "プリシラ-Is-",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/733.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/278"
+  },
+  {
+    "id": 277,
+    "unit_id": 731,
+    "nombre_jp": "ヴァルティー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/731.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/277"
+  },
+  {
+    "id": 276,
+    "unit_id": 729,
+    "nombre_jp": "黎明の翠エリザベス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/729.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/276"
+  },
+  {
+    "id": 275,
+    "unit_id": 727,
+    "nombre_jp": "水着レオーネ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/727.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/275"
+  },
+  {
+    "id": 274,
+    "unit_id": 725,
+    "nombre_jp": "水着ジュノー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/725.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/274"
+  },
+  {
+    "id": 273,
+    "unit_id": 723,
+    "nombre_jp": "漆黒の銃聖ライラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/723.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/273"
+  },
+  {
+    "id": 272,
+    "unit_id": 721,
+    "nombre_jp": "漆黒の神燕アイリ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/721.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/272"
+  },
+  {
+    "id": 271,
+    "unit_id": 719,
+    "nombre_jp": "セラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/719.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/271"
+  },
+  {
+    "id": 270,
+    "unit_id": 717,
+    "nombre_jp": "プリシラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/717.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/270"
+  },
+  {
+    "id": 269,
+    "unit_id": 715,
+    "nombre_jp": "ヴァルティー-Lr-",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/715.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/269"
+  },
+  {
+    "id": 268,
+    "unit_id": 713,
+    "nombre_jp": "シモン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/713.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/268"
+  },
+  {
+    "id": 267,
+    "unit_id": 711,
+    "nombre_jp": "ミランダ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/711.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/267"
+  },
+  {
+    "id": 266,
+    "unit_id": 709,
+    "nombre_jp": "ハルト-Xi-",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/709.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/266"
+  },
+  {
+    "id": 265,
+    "unit_id": 707,
+    "nombre_jp": "ハルト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/707.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/265"
+  },
+  {
+    "id": 264,
+    "unit_id": 705,
+    "nombre_jp": "グロイツ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/705.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/264"
+  },
+  {
+    "id": 263,
+    "unit_id": 703,
+    "nombre_jp": "エミー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/703.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/263"
+  },
+  {
+    "id": 262,
+    "unit_id": 701,
+    "nombre_jp": "黒猫探偵リーゼ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/701.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/262"
+  },
+  {
+    "id": 261,
+    "unit_id": 699,
+    "nombre_jp": "ジュノー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/699.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/261"
+  },
+  {
+    "id": 260,
+    "unit_id": 697,
+    "nombre_jp": "バティスト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/697.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/260"
+  },
+  {
+    "id": 259,
+    "unit_id": 695,
+    "nombre_jp": "ノエル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/695.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/259"
+  },
+  {
+    "id": 258,
+    "unit_id": 693,
+    "nombre_jp": "マリカ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/693.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/258"
+  },
+  {
+    "id": 257,
+    "unit_id": 691,
+    "nombre_jp": "創成の申し子アルル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/691.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/257"
+  },
+  {
+    "id": 256,
+    "unit_id": 689,
+    "nombre_jp": "溢れる想像力レイン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/689.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/256"
+  },
+  {
+    "id": 255,
+    "unit_id": 687,
+    "nombre_jp": "救済の奏者リッツ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/687.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/255"
+  },
+  {
+    "id": 254,
+    "unit_id": 685,
+    "nombre_jp": "閃耀の演者シャロン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/685.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/254"
+  },
+  {
+    "id": 253,
+    "unit_id": 683,
+    "nombre_jp": "貫いた理想サリサ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/683.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/253"
+  },
+  {
+    "id": 252,
+    "unit_id": 681,
+    "nombre_jp": "心の抱擁者アーシュリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/681.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/252"
+  },
+  {
+    "id": 251,
+    "unit_id": 679,
+    "nombre_jp": "アルカナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/679.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/251"
+  },
+  {
+    "id": 250,
+    "unit_id": 677,
+    "nombre_jp": "神弧の画聖スミレ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/677.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/250"
+  },
+  {
+    "id": 249,
+    "unit_id": 675,
+    "nombre_jp": "闇軍統妃フォルテ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/675.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/249"
+  },
+  {
+    "id": 248,
+    "unit_id": 673,
+    "nombre_jp": "ヴィクトワール",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/673.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/248"
+  },
+  {
+    "id": 247,
+    "unit_id": 671,
+    "nombre_jp": "バクー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/671.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/247"
+  },
+  {
+    "id": 246,
+    "unit_id": 669,
+    "nombre_jp": "イーグル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/669.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/246"
+  },
+  {
+    "id": 245,
+    "unit_id": 667,
+    "nombre_jp": "アンジェラス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/667.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/245"
+  },
+  {
+    "id": 244,
+    "unit_id": 665,
+    "nombre_jp": "クロエ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/665.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/244"
+  },
+  {
+    "id": 243,
+    "unit_id": 662,
+    "nombre_jp": "ルアン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/662.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/243"
+  },
+  {
+    "id": 242,
+    "unit_id": 660,
+    "nombre_jp": "ヴィラーゴ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/660.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/242"
+  },
+  {
+    "id": 241,
+    "unit_id": 657,
+    "nombre_jp": "オーヴェル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/657.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/241"
+  },
+  {
+    "id": 240,
+    "unit_id": 655,
+    "nombre_jp": "シグニット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/655.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/240"
+  },
+  {
+    "id": 239,
+    "unit_id": 652,
+    "nombre_jp": "リザ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/652.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/239"
+  },
+  {
+    "id": 238,
+    "unit_id": 650,
+    "nombre_jp": "ラダック",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/650.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/238"
+  },
+  {
+    "id": 237,
+    "unit_id": 647,
+    "nombre_jp": "システィーナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/647.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/237"
+  },
+  {
+    "id": 236,
+    "unit_id": 645,
+    "nombre_jp": "駆け抜ける焔ロイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/645.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/236"
+  },
+  {
+    "id": 235,
+    "unit_id": 643,
+    "nombre_jp": "凛舞大鎌ベロニカ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/643.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/235"
+  },
+  {
+    "id": 234,
+    "unit_id": 641,
+    "nombre_jp": "燦煌射才アルズ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/641.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/234"
+  },
+  {
+    "id": 233,
+    "unit_id": 639,
+    "nombre_jp": "地動戦鬼ガーラン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/639.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/233"
+  },
+  {
+    "id": 232,
+    "unit_id": 637,
+    "nombre_jp": "碧閃剣騎フィリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/637.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/232"
+  },
+  {
+    "id": 231,
+    "unit_id": 635,
+    "nombre_jp": "神燃導獅ヴァーミリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/635.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/231"
+  },
+  {
+    "id": 230,
+    "unit_id": 633,
+    "nombre_jp": "蒼碧術姫アデル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/633.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/230"
+  },
+  {
+    "id": 229,
+    "unit_id": 631,
+    "nombre_jp": "焔豪剣士オルガ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/631.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/229"
+  },
+  {
+    "id": 228,
+    "unit_id": 629,
+    "nombre_jp": "タマエ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/629.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/228"
+  },
+  {
+    "id": 227,
+    "unit_id": 627,
+    "nombre_jp": "サク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/627.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/227"
+  },
+  {
+    "id": 226,
+    "unit_id": 625,
+    "nombre_jp": "キサラギ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/625.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/226"
+  },
+  {
+    "id": 225,
+    "unit_id": 623,
+    "nombre_jp": "アマネ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/623.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/225"
+  },
+  {
+    "id": 224,
+    "unit_id": 621,
+    "nombre_jp": "シュリ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/621.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/224"
+  },
+  {
+    "id": 223,
+    "unit_id": 619,
+    "nombre_jp": "シキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/619.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/223"
+  },
+  {
+    "id": 222,
+    "unit_id": 617,
+    "nombre_jp": "ギンゾウ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/617.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/222"
+  },
+  {
+    "id": 221,
+    "unit_id": 615,
+    "nombre_jp": "ミズキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/615.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/221"
+  },
+  {
+    "id": 220,
+    "unit_id": 613,
+    "nombre_jp": "冥宵竜神バロッサ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/613.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/220"
+  },
+  {
+    "id": 219,
+    "unit_id": 611,
+    "nombre_jp": "光竜騎神メリッサ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/611.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/219"
+  },
+  {
+    "id": 218,
+    "unit_id": 609,
+    "nombre_jp": "獣神拳后シンシア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/609.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/218"
+  },
+  {
+    "id": 217,
+    "unit_id": 607,
+    "nombre_jp": "迅勇幻神サイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/607.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/217"
+  },
+  {
+    "id": 216,
+    "unit_id": 605,
+    "nombre_jp": "冥鎌貴神シビル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/605.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/216"
+  },
+  {
+    "id": 215,
+    "unit_id": 603,
+    "nombre_jp": "漆黒剣皇ケイン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/603.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/215"
+  },
+  {
+    "id": 214,
+    "unit_id": 601,
+    "nombre_jp": "漆黒銃皇フェン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/601.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/214"
+  },
+  {
+    "id": 213,
+    "unit_id": 599,
+    "nombre_jp": "氷藍獣姫ターニャ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/599.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/213"
+  },
+  {
+    "id": 212,
+    "unit_id": 597,
+    "nombre_jp": "紅炎獣姫ミリーニャ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/597.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/212"
+  },
+  {
+    "id": 211,
+    "unit_id": 594,
+    "nombre_jp": "聖護神威イオ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/594.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/211"
+  },
+  {
+    "id": 210,
+    "unit_id": 592,
+    "nombre_jp": "神焔忍姫ホノカ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/592.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/210"
+  },
+  {
+    "id": 209,
+    "unit_id": 590,
+    "nombre_jp": "翠神帝姫ベル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/590.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/209"
+  },
+  {
+    "id": 208,
+    "unit_id": 588,
+    "nombre_jp": "レオーネ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/588.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/208"
+  },
+  {
+    "id": 207,
+    "unit_id": 586,
+    "nombre_jp": "ロゼッタ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/586.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/207"
+  },
+  {
+    "id": 206,
+    "unit_id": 584,
+    "nombre_jp": "剣士ベリック",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/584.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/206"
+  },
+  {
+    "id": 205,
+    "unit_id": 582,
+    "nombre_jp": "英将魔神レボル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/582.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/205"
+  },
+  {
+    "id": 204,
+    "unit_id": 580,
+    "nombre_jp": "神眼聖姫クーシー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/580.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/204"
+  },
+  {
+    "id": 203,
+    "unit_id": 578,
+    "nombre_jp": "夢幻魔后シャシャ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/578.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/203"
+  },
+  {
+    "id": 202,
+    "unit_id": 576,
+    "nombre_jp": "瑞麗占姫ティア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/576.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/202"
+  },
+  {
+    "id": 201,
+    "unit_id": 574,
+    "nombre_jp": "縛封恐羅リゴール",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/574.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/201"
+  },
+  {
+    "id": 200,
+    "unit_id": 572,
+    "nombre_jp": "豪剣覇皇ルーダ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/572.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/200"
+  },
+  {
+    "id": 199,
+    "unit_id": 570,
+    "nombre_jp": "闘竜軍神エイシス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/570.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/199"
+  },
+  {
+    "id": 198,
+    "unit_id": 567,
+    "nombre_jp": "焔志獣神クルト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/567.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/198"
+  },
+  {
+    "id": 197,
+    "unit_id": 565,
+    "nombre_jp": "暁天剣神エタニア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/565.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/197"
+  },
+  {
+    "id": 196,
+    "unit_id": 563,
+    "nombre_jp": "碧愛師聖マキナス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/563.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/196"
+  },
+  {
+    "id": 195,
+    "unit_id": 561,
+    "nombre_jp": "氷魔槍皇ヴィッツ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/561.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/195"
+  },
+  {
+    "id": 194,
+    "unit_id": 558,
+    "nombre_jp": "神魔統帥シーリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/558.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/194"
+  },
+  {
+    "id": 193,
+    "unit_id": 556,
+    "nombre_jp": "蒼氷麗刃メリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/556.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/193"
+  },
+  {
+    "id": 192,
+    "unit_id": 554,
+    "nombre_jp": "デューク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/554.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/192"
+  },
+  {
+    "id": 191,
+    "unit_id": 552,
+    "nombre_jp": "ヴォックス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/552.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/191"
+  },
+  {
+    "id": 190,
+    "unit_id": 550,
+    "nombre_jp": "セティス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/550.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/190"
+  },
+  {
+    "id": 189,
+    "unit_id": 548,
+    "nombre_jp": "リヴィエラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/548.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/189"
+  },
+  {
+    "id": 188,
+    "unit_id": 546,
+    "nombre_jp": "ベリック",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/546.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/188"
+  },
+  {
+    "id": 187,
+    "unit_id": 544,
+    "nombre_jp": "操死魔后アルティ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/544.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/187"
+  },
+  {
+    "id": 186,
+    "unit_id": 541,
+    "nombre_jp": "絶零殺竜グラニス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/541.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/186"
+  },
+  {
+    "id": 185,
+    "unit_id": 538,
+    "nombre_jp": "闇竜騎神ワーグル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/538.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/185"
+  },
+  {
+    "id": 184,
+    "unit_id": 536,
+    "nombre_jp": "竜克騎神ウィーバ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/536.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/184"
+  },
+  {
+    "id": 183,
+    "unit_id": 534,
+    "nombre_jp": "創造邪精ストラフ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/534.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/183"
+  },
+  {
+    "id": 182,
+    "unit_id": 531,
+    "nombre_jp": "護焔巨神バドル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/531.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/182"
+  },
+  {
+    "id": 181,
+    "unit_id": 528,
+    "nombre_jp": "魔剣英雄ゼイオルグ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/528.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/181"
+  },
+  {
+    "id": 180,
+    "unit_id": 526,
+    "nombre_jp": "桜華一刀流ミラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/526.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/180"
+  },
+  {
+    "id": 179,
+    "unit_id": 524,
+    "nombre_jp": "浄魔聖師バレンティア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/524.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/179"
+  },
+  {
+    "id": 178,
+    "unit_id": 522,
+    "nombre_jp": "禁破狂獣ゼルカラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/522.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/178"
+  },
+  {
+    "id": 177,
+    "unit_id": 519,
+    "nombre_jp": "魔翼剣豪ラキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/519.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/177"
+  },
+  {
+    "id": 176,
+    "unit_id": 517,
+    "nombre_jp": "鳳神輝皇ダキ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/517.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/176"
+  },
+  {
+    "id": 175,
+    "unit_id": 515,
+    "nombre_jp": "断無剣聖ノギア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/515.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/175"
+  },
+  {
+    "id": 174,
+    "unit_id": 512,
+    "nombre_jp": "焔統神イフリート",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/512.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/174"
+  },
+  {
+    "id": 173,
+    "unit_id": 510,
+    "nombre_jp": "静聖神パルラミシア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/510.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/173"
+  },
+  {
+    "id": 172,
+    "unit_id": 508,
+    "nombre_jp": "醒魔槍神アルヴィナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/508.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/172"
+  },
+  {
+    "id": 171,
+    "unit_id": 506,
+    "nombre_jp": "国謀幻帥ジル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/506.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/171"
+  },
+  {
+    "id": 170,
+    "unit_id": 504,
+    "nombre_jp": "戦神獣王ロッズ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/504.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/170"
+  },
+  {
+    "id": 169,
+    "unit_id": 502,
+    "nombre_jp": "煌華剣神タリス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/502.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/169"
+  },
+  {
+    "id": 168,
+    "unit_id": 500,
+    "nombre_jp": "神機総帥ヴィシャス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/500.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/168"
+  },
+  {
+    "id": 167,
+    "unit_id": 497,
+    "nombre_jp": "奉凰慈聖フェレス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/497.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/167"
+  },
+  {
+    "id": 166,
+    "unit_id": 495,
+    "nombre_jp": "六魔使后ミクス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/495.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/166"
+  },
+  {
+    "id": 165,
+    "unit_id": 493,
+    "nombre_jp": "獣召魔煌ピエンツ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/493.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/165"
+  },
+  {
+    "id": 164,
+    "unit_id": 490,
+    "nombre_jp": "纏 流子",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/490.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/164"
+  },
+  {
+    "id": 163,
+    "unit_id": 488,
+    "nombre_jp": "鬼龍院 皐月",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/488.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/163"
+  },
+  {
+    "id": 162,
+    "unit_id": 486,
+    "nombre_jp": "満艦飾 マコ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/486.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/162"
+  },
+  {
+    "id": 161,
+    "unit_id": 484,
+    "nombre_jp": "絶天神マールゼクス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/484.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/161"
+  },
+  {
+    "id": 160,
+    "unit_id": 482,
+    "nombre_jp": "神出砲姫コートニー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/482.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/160"
+  },
+  {
+    "id": 159,
+    "unit_id": 480,
+    "nombre_jp": "ケイン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/480.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/159"
+  },
+  {
+    "id": 158,
+    "unit_id": 478,
+    "nombre_jp": "リアナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/478.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/158"
+  },
+  {
+    "id": 157,
+    "unit_id": 476,
+    "nombre_jp": "ノルン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/476.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/157"
+  },
+  {
+    "id": 156,
+    "unit_id": 474,
+    "nombre_jp": "アッシュ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/474.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/156"
+  },
+  {
+    "id": 155,
+    "unit_id": 472,
+    "nombre_jp": "シーリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/472.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/155"
+  },
+  {
+    "id": 154,
+    "unit_id": 470,
+    "nombre_jp": "煌忍烈機ジャック",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/470.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/154"
+  },
+  {
+    "id": 153,
+    "unit_id": 468,
+    "nombre_jp": "滅界鬼神フォスレ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/468.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/153"
+  },
+  {
+    "id": 152,
+    "unit_id": 466,
+    "nombre_jp": "封神狐后ジーラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/466.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/152"
+  },
+  {
+    "id": 151,
+    "unit_id": 464,
+    "nombre_jp": "竜軍将帥ジェラルド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/464.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/151"
+  },
+  {
+    "id": 150,
+    "unit_id": 462,
+    "nombre_jp": "武神竜帥ロスト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/462.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/150"
+  },
+  {
+    "id": 149,
+    "unit_id": 459,
+    "nombre_jp": "神剣舞后メルティ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/459.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/149"
+  },
+  {
+    "id": 148,
+    "unit_id": 456,
+    "nombre_jp": "星華弓聖マモリ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/456.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/148"
+  },
+  {
+    "id": 147,
+    "unit_id": 454,
+    "nombre_jp": "碧魔降帥ディアス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/454.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/147"
+  },
+  {
+    "id": 146,
+    "unit_id": 452,
+    "nombre_jp": "快殺魔神ボーゲン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/452.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/146"
+  },
+  {
+    "id": 145,
+    "unit_id": 450,
+    "nombre_jp": "碧命剣聖ヴォーグ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/450.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/145"
+  },
+  {
+    "id": 144,
+    "unit_id": 448,
+    "nombre_jp": "狼殺銃神スライ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/448.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/144"
+  },
+  {
+    "id": 143,
+    "unit_id": 446,
+    "nombre_jp": "焔聖護神アンナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/446.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/143"
+  },
+  {
+    "id": 142,
+    "unit_id": 444,
+    "nombre_jp": "魔神臣姫ココ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/444.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/142"
+  },
+  {
+    "id": 141,
+    "unit_id": 442,
+    "nombre_jp": "終視姫聖エンド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/442.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/141"
+  },
+  {
+    "id": 140,
+    "unit_id": 440,
+    "nombre_jp": "転魔狂神カイアス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/440.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/140"
+  },
+  {
+    "id": 139,
+    "unit_id": 437,
+    "nombre_jp": "魔神術卿オンファン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/437.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/139"
+  },
+  {
+    "id": 138,
+    "unit_id": 435,
+    "nombre_jp": "霊視魔后ソニエ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/435.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/138"
+  },
+  {
+    "id": 137,
+    "unit_id": 433,
+    "nombre_jp": "時空魔導卿アルマ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/433.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/137"
+  },
+  {
+    "id": 136,
+    "unit_id": 431,
+    "nombre_jp": "滅壊機神ラプレ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/431.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/136"
+  },
+  {
+    "id": 135,
+    "unit_id": 429,
+    "nombre_jp": "輝焔斧后リシュリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/429.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/135"
+  },
+  {
+    "id": 134,
+    "unit_id": 427,
+    "nombre_jp": "狂戮魔皇グロール",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/427.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/134"
+  },
+  {
+    "id": 133,
+    "unit_id": 425,
+    "nombre_jp": "神魔皇帝フリード",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/425.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/133"
+  },
+  {
+    "id": 132,
+    "unit_id": 423,
+    "nombre_jp": "精霊神妃ミュゼ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/423.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/132"
+  },
+  {
+    "id": 131,
+    "unit_id": 420,
+    "nombre_jp": "神霊槍妃デイシー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/420.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/131"
+  },
+  {
+    "id": 130,
+    "unit_id": 418,
+    "nombre_jp": "霊焔剣后リアン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/418.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/130"
+  },
+  {
+    "id": 129,
+    "unit_id": 416,
+    "nombre_jp": "No.2",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/416.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/129"
+  },
+  {
+    "id": 128,
+    "unit_id": 414,
+    "nombre_jp": "マールゼクス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/414.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/128"
+  },
+  {
+    "id": 127,
+    "unit_id": 412,
+    "nombre_jp": "カズレーザー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/412.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/127"
+  },
+  {
+    "id": 126,
+    "unit_id": 410,
+    "nombre_jp": "神焔剣聖グラン=ブレイブ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/410.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/126"
+  },
+  {
+    "id": 125,
+    "unit_id": 407,
+    "nombre_jp": "真識竜帥ルーヴェ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/407.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/125"
+  },
+  {
+    "id": 124,
+    "unit_id": 405,
+    "nombre_jp": "祝命献姫アルシェ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/405.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/124"
+  },
+  {
+    "id": 123,
+    "unit_id": 402,
+    "nombre_jp": "諜戮滅魔ミレニア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/402.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/123"
+  },
+  {
+    "id": 122,
+    "unit_id": 399,
+    "nombre_jp": "蒼華神輝ガイア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/399.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/122"
+  },
+  {
+    "id": 121,
+    "unit_id": 395,
+    "nombre_jp": "騎砲黒神ダリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/395.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/121"
+  },
+  {
+    "id": 120,
+    "unit_id": 392,
+    "nombre_jp": "叡天騎帥パロット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/392.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/120"
+  },
+  {
+    "id": 119,
+    "unit_id": 389,
+    "nombre_jp": "神煌聖騎プラチナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/389.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/119"
+  },
+  {
+    "id": 118,
+    "unit_id": 386,
+    "nombre_jp": "熾天盾聖サンストン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/386.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/118"
+  },
+  {
+    "id": 117,
+    "unit_id": 383,
+    "nombre_jp": "聖天覇神ニース",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/383.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/117"
+  },
+  {
+    "id": 116,
+    "unit_id": 380,
+    "nombre_jp": "冥魔槍后ミーズィナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/380.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/116"
+  },
+  {
+    "id": 115,
+    "unit_id": 377,
+    "nombre_jp": "秘謀の調停者カテミラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/377.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/115"
+  },
+  {
+    "id": 114,
+    "unit_id": 373,
+    "nombre_jp": "神狂究帥カイト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/373.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/114"
+  },
+  {
+    "id": 113,
+    "unit_id": 370,
+    "nombre_jp": "巨神愛姫ユミィ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/370.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/113"
+  },
+  {
+    "id": 112,
+    "unit_id": 367,
+    "nombre_jp": "究至剣神ラサオウ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/367.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/112"
+  },
+  {
+    "id": 111,
+    "unit_id": 364,
+    "nombre_jp": "双豪の義后カティロ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/364.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/111"
+  },
+  {
+    "id": 110,
+    "unit_id": 361,
+    "nombre_jp": "古竜神妃ファブル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/361.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/110"
+  },
+  {
+    "id": 108,
+    "unit_id": 355,
+    "nombre_jp": "煌炎の守護精フェルド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/355.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/108"
+  },
+  {
+    "id": 107,
+    "unit_id": 352,
+    "nombre_jp": "悠碧の聖護神クオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/352.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/107"
+  },
+  {
+    "id": 106,
+    "unit_id": 335,
+    "nombre_jp": "護神竜后ネリム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/335.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/106"
+  },
+  {
+    "id": 105,
+    "unit_id": 332,
+    "nombre_jp": "閃神槍覇レイオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/332.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/105"
+  },
+  {
+    "id": 104,
+    "unit_id": 329,
+    "nombre_jp": "煌炎烈后リオネ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/329.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/104"
+  },
+  {
+    "id": 103,
+    "unit_id": 326,
+    "nombre_jp": "万霊騎皇エルメシオ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/326.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/103"
+  },
+  {
+    "id": 102,
+    "unit_id": 323,
+    "nombre_jp": "覇弓騎凰ケオネス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/323.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/102"
+  },
+  {
+    "id": 101,
+    "unit_id": 320,
+    "nombre_jp": "燼滅獄炎竜テリオドス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/320.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/101"
+  },
+  {
+    "id": 100,
+    "unit_id": 317,
+    "nombre_jp": "天雷大神リオティス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/317.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/100"
+  },
+  {
+    "id": 99,
+    "unit_id": 314,
+    "nombre_jp": "覇獣神后シャディ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/314.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/99"
+  },
+  {
+    "id": 98,
+    "unit_id": 311,
+    "nombre_jp": "冥翼魔后リフィリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/311.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/98"
+  },
+  {
+    "id": 97,
+    "unit_id": 308,
+    "nombre_jp": "叡樹巨神オルゲス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/308.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/97"
+  },
+  {
+    "id": 96,
+    "unit_id": 305,
+    "nombre_jp": "神竜聖匠ロディア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/305.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/96"
+  },
+  {
+    "id": 95,
+    "unit_id": 302,
+    "nombre_jp": "焔獄巨神ゾルダス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/302.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/95"
+  },
+  {
+    "id": 94,
+    "unit_id": 299,
+    "nombre_jp": "魔壊封妃アリステラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/299.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/94"
+  },
+  {
+    "id": 93,
+    "unit_id": 296,
+    "nombre_jp": "双銃冥皇ゼクト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/296.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/93"
+  },
+  {
+    "id": 92,
+    "unit_id": 293,
+    "nombre_jp": "誅神超騎ゼクシア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/293.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/92"
+  },
+  {
+    "id": 91,
+    "unit_id": 290,
+    "nombre_jp": "闘神竜将ゾロアス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/290.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/91"
+  },
+  {
+    "id": 90,
+    "unit_id": 287,
+    "nombre_jp": "殲滅の怨魔神リオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/287.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/90"
+  },
+  {
+    "id": 89,
+    "unit_id": 284,
+    "nombre_jp": "冥華魔后ポーラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/284.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/89"
+  },
+  {
+    "id": 88,
+    "unit_id": 281,
+    "nombre_jp": "覇獣魔王ザール",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/281.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/88"
+  },
+  {
+    "id": 87,
+    "unit_id": 278,
+    "nombre_jp": "撃滅の焔機神ソレイユ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/278.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/87"
+  },
+  {
+    "id": 86,
+    "unit_id": 275,
+    "nombre_jp": "壊魂滅神ゼノン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/275.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/86"
+  },
+  {
+    "id": 85,
+    "unit_id": 272,
+    "nombre_jp": "聖盾神騎デュラン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/272.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/85"
+  },
+  {
+    "id": 84,
+    "unit_id": 269,
+    "nombre_jp": "聖樹弓神アシュ・トト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/269.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/84"
+  },
+  {
+    "id": 83,
+    "unit_id": 266,
+    "nombre_jp": "氷界の魔凍妃セリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/266.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/83"
+  },
+  {
+    "id": 82,
+    "unit_id": 263,
+    "nombre_jp": "焔竜騎神アロスデア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/263.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/82"
+  },
+  {
+    "id": 81,
+    "unit_id": 260,
+    "nombre_jp": "レム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/260.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/81"
+  },
+  {
+    "id": 80,
+    "unit_id": 257,
+    "nombre_jp": "ソフィ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/257.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/80"
+  },
+  {
+    "id": 79,
+    "unit_id": 253,
+    "nombre_jp": "エスト",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/253.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/79"
+  },
+  {
+    "id": 78,
+    "unit_id": 250,
+    "nombre_jp": "リーゼ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/250.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/78"
+  },
+  {
+    "id": 77,
+    "unit_id": 247,
+    "nombre_jp": "ギリアム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/247.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/77"
+  },
+  {
+    "id": 76,
+    "unit_id": 243,
+    "nombre_jp": "ガナン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/243.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/76"
+  },
+  {
+    "id": 75,
+    "unit_id": 239,
+    "nombre_jp": "ニーア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/239.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/75"
+  },
+  {
+    "id": 74,
+    "unit_id": 235,
+    "nombre_jp": "グラード",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/235.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/74"
+  },
+  {
+    "id": 73,
+    "unit_id": 231,
+    "nombre_jp": "ラグシェルム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/231.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/73"
+  },
+  {
+    "id": 72,
+    "unit_id": 228,
+    "nombre_jp": "メリア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/228.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/72"
+  },
+  {
+    "id": 71,
+    "unit_id": 225,
+    "nombre_jp": "ゼイオルグ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/225.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/71"
+  },
+  {
+    "id": 70,
+    "unit_id": 222,
+    "nombre_jp": "フェン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/222.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/70"
+  },
+  {
+    "id": 69,
+    "unit_id": 219,
+    "nombre_jp": "ミラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/219.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/69"
+  },
+  {
+    "id": 68,
+    "unit_id": 216,
+    "nombre_jp": "ロイ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/216.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/68"
+  },
+  {
+    "id": 67,
+    "unit_id": 213,
+    "nombre_jp": "イリス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/213.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/67"
+  },
+  {
+    "id": 66,
+    "unit_id": 211,
+    "nombre_jp": "レイアス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/211.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/66"
+  },
+  {
+    "id": 65,
+    "unit_id": 170,
+    "nombre_jp": "冥葬鎌妃神リリー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/170.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/65"
+  },
+  {
+    "id": 64,
+    "unit_id": 166,
+    "nombre_jp": "蒼輝の獣神エルファラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/166.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/64"
+  },
+  {
+    "id": 63,
+    "unit_id": 162,
+    "nombre_jp": "神滅兵器ヴァイド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/162.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/63"
+  },
+  {
+    "id": 62,
+    "unit_id": 158,
+    "nombre_jp": "瀑麗神后ヨミ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/158.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/62"
+  },
+  {
+    "id": 61,
+    "unit_id": 154,
+    "nombre_jp": "神焔騎皇ラグナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/154.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/61"
+  },
+  {
+    "id": 60,
+    "unit_id": 150,
+    "nombre_jp": "神滅の狂騎神アバドン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/150.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/60"
+  },
+  {
+    "id": 59,
+    "unit_id": 146,
+    "nombre_jp": "EDEN-typeΩ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/146.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/59"
+  },
+  {
+    "id": 58,
+    "unit_id": 142,
+    "nombre_jp": "幻創神樹バルハラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/142.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/58"
+  },
+  {
+    "id": 57,
+    "unit_id": 138,
+    "nombre_jp": "唯海神ハーク",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/138.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/57"
+  },
+  {
+    "id": 56,
+    "unit_id": 134,
+    "nombre_jp": "覇煌竜神ダルギオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/134.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/56"
+  },
+  {
+    "id": 55,
+    "unit_id": 130,
+    "nombre_jp": "羅将オロチ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/130.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/55"
+  },
+  {
+    "id": 54,
+    "unit_id": 128,
+    "nombre_jp": "破壊の銃姫アメル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/128.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/54"
+  },
+  {
+    "id": 53,
+    "unit_id": 126,
+    "nombre_jp": "幻奏影師ゼクス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/126.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/53"
+  },
+  {
+    "id": 52,
+    "unit_id": 124,
+    "nombre_jp": "海賊帝グラッフル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/124.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/52"
+  },
+  {
+    "id": 51,
+    "unit_id": 122,
+    "nombre_jp": "紅蓮斧姫フィアナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/122.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/51"
+  },
+  {
+    "id": 50,
+    "unit_id": 120,
+    "nombre_jp": "アフラ=ドラギム",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/120.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/50"
+  },
+  {
+    "id": 49,
+    "unit_id": 118,
+    "nombre_jp": "スピニシオス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/118.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/49"
+  },
+  {
+    "id": 48,
+    "unit_id": 116,
+    "nombre_jp": "グランガロード",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/116.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/48"
+  },
+  {
+    "id": 47,
+    "unit_id": 114,
+    "nombre_jp": "オーンゴード",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/114.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/47"
+  },
+  {
+    "id": 46,
+    "unit_id": 112,
+    "nombre_jp": "フェマシューザ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/112.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/46"
+  },
+  {
+    "id": 45,
+    "unit_id": 110,
+    "nombre_jp": "麗艶亡姫メイラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/110.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/45"
+  },
+  {
+    "id": 44,
+    "unit_id": 108,
+    "nombre_jp": "雷哮剣鬼ライザー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/108.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/44"
+  },
+  {
+    "id": 43,
+    "unit_id": 106,
+    "nombre_jp": "百獣姫レン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/106.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/43"
+  },
+  {
+    "id": 42,
+    "unit_id": 104,
+    "nombre_jp": "水神剣帝ノア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/104.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/42"
+  },
+  {
+    "id": 41,
+    "unit_id": 102,
+    "nombre_jp": "巨兵煌姫ファロン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/102.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/41"
+  },
+  {
+    "id": 40,
+    "unit_id": 100,
+    "nombre_jp": "暗黒魔導オグナード",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/100.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/40"
+  },
+  {
+    "id": 39,
+    "unit_id": 97,
+    "nombre_jp": "迅雷弓帝ファル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/97.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/39"
+  },
+  {
+    "id": 38,
+    "unit_id": 94,
+    "nombre_jp": "堅樹鎧王グラデス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/94.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/38"
+  },
+  {
+    "id": 37,
+    "unit_id": 91,
+    "nombre_jp": "銃覇帝ヴォイド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/91.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/37"
+  },
+  {
+    "id": 36,
+    "unit_id": 88,
+    "nombre_jp": "豪炎拳姫ディアナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/88.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/36"
+  },
+  {
+    "id": 35,
+    "unit_id": 85,
+    "nombre_jp": "ファフニール",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/85.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/35"
+  },
+  {
+    "id": 34,
+    "unit_id": 83,
+    "nombre_jp": "ミモーザス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/83.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/34"
+  },
+  {
+    "id": 33,
+    "unit_id": 81,
+    "nombre_jp": "ラグドベイオス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/81.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/33"
+  },
+  {
+    "id": 32,
+    "unit_id": 79,
+    "nombre_jp": "ディムローバ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/79.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/32"
+  },
+  {
+    "id": 31,
+    "unit_id": 77,
+    "nombre_jp": "ビッグフレイド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/77.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/31"
+  },
+  {
+    "id": 30,
+    "unit_id": 75,
+    "nombre_jp": "シュローザー",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/75.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/30"
+  },
+  {
+    "id": 29,
+    "unit_id": 73,
+    "nombre_jp": "翼仰騎士エルザ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/73.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/29"
+  },
+  {
+    "id": 28,
+    "unit_id": 71,
+    "nombre_jp": "大盗賊クロウ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/71.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/28"
+  },
+  {
+    "id": 27,
+    "unit_id": 69,
+    "nombre_jp": "凶戦士ダラン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/69.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/27"
+  },
+  {
+    "id": 26,
+    "unit_id": 67,
+    "nombre_jp": "獣皇ヴァルド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/67.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/26"
+  },
+  {
+    "id": 25,
+    "unit_id": 65,
+    "nombre_jp": "SX-602型Limited",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/65.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/25"
+  },
+  {
+    "id": 24,
+    "unit_id": 63,
+    "nombre_jp": "メル=ヴァーラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/63.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/24"
+  },
+  {
+    "id": 23,
+    "unit_id": 61,
+    "nombre_jp": "サイクロプス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/61.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/23"
+  },
+  {
+    "id": 22,
+    "unit_id": 59,
+    "nombre_jp": "スキュラ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/59.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/22"
+  },
+  {
+    "id": 21,
+    "unit_id": 57,
+    "nombre_jp": "グロヴォーグ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/57.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/21"
+  },
+  {
+    "id": 20,
+    "unit_id": 55,
+    "nombre_jp": "竜牙兵",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/55.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/20"
+  },
+  {
+    "id": 19,
+    "unit_id": 53,
+    "nombre_jp": "モノケロース",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/53.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/19"
+  },
+  {
+    "id": 18,
+    "unit_id": 51,
+    "nombre_jp": "コログラン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/51.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/18"
+  },
+  {
+    "id": 17,
+    "unit_id": 49,
+    "nombre_jp": "サーディオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/49.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/17"
+  },
+  {
+    "id": 16,
+    "unit_id": 47,
+    "nombre_jp": "ハイゴブル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/47.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/16"
+  },
+  {
+    "id": 15,
+    "unit_id": 45,
+    "nombre_jp": "ブラッディバット",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/45.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/15"
+  },
+  {
+    "id": 14,
+    "unit_id": 43,
+    "nombre_jp": "精霊メオール",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/43.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/14"
+  },
+  {
+    "id": 13,
+    "unit_id": 41,
+    "nombre_jp": "羅岩ドーグル",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/41.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/13"
+  },
+  {
+    "id": 12,
+    "unit_id": 39,
+    "nombre_jp": "高僧リーダ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/39.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/12"
+  },
+  {
+    "id": 11,
+    "unit_id": 37,
+    "nombre_jp": "冥獣ギリウス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/37.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/11"
+  },
+  {
+    "id": 10,
+    "unit_id": 35,
+    "nombre_jp": "キングダキュオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/35.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/10"
+  },
+  {
+    "id": 9,
+    "unit_id": 33,
+    "nombre_jp": "キングピキュオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/33.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/9"
+  },
+  {
+    "id": 8,
+    "unit_id": 31,
+    "nombre_jp": "キングモキュオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/31.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/8"
+  },
+  {
+    "id": 7,
+    "unit_id": 29,
+    "nombre_jp": "キングミキュオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/29.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/7"
+  },
+  {
+    "id": 6,
+    "unit_id": 27,
+    "nombre_jp": "キングレキュオン",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/27.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/6"
+  },
+  {
+    "id": 5,
+    "unit_id": 25,
+    "nombre_jp": "冥黒騎皇レグルス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/25.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/5"
+  },
+  {
+    "id": 4,
+    "unit_id": 20,
+    "nombre_jp": "双聖騎神フィーナ",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/20.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/4"
+  },
+  {
+    "id": 3,
+    "unit_id": 15,
+    "nombre_jp": "双翠剣皇アルス",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/15.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/3"
+  },
+  {
+    "id": 2,
+    "unit_id": 10,
+    "nombre_jp": "絶氷剣后コルセア",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/10.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/2"
+  },
+  {
+    "id": 1,
+    "unit_id": 5,
+    "nombre_jp": "覇煌剣神クライド",
+    "imagen": "https://img.altema.jp/grandsummoners/unit/icon/5.jpg",
+    "url": "https://altema.jp/grandsummoners/unit/1"
+  }
+]

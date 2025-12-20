@@ -1,0 +1,392 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.15s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #334155;
+}
+
+.card .name {
+  font-size: 14px;
+  margin-top: 8px;
+}
+#filters {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filter-group button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1e2a3a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-group button:hover,
+.filter-group button.active {
+  background: #3498db;
+}
+
+#search {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+}
+.card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: #0e1a2b;
+  padding: 10px;
+  font-size: 12px;
+  overflow-y: auto;
+  max-height: 520px;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+#unit-card {
+  width: 360px;
+  height: 460px;
+  max-width: 90vw;
+}
+/* ===== FRONT CARD ===== */
+
+.front-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.front-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.front-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.unit-name {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.stat .label {
+  opacity: 0.7;
+}
+
+.stat.hp .value { color: #2ecc71; }   /* verde */
+.stat.atk .value { color: #e74c3c; }  /* rojo */
+.stat.def .value { color: #3498db; }  /* azul */
+/* ===== SKILLS VIEW ===== */
+
+.skills-view {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.skill-group {
+  margin-bottom: 12px;
+}
+
+.skill-group h3 {
+  font-size: 13px;
+  margin: 6px 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #334155;
+  text-transform: uppercase;
+}
+
+.skill-item {
+  margin-bottom: 8px;
+}
+
+.skill-item strong {
+  font-size: 12px;
+}
+
+.skill-item p {
+  font-size: 11px;
+  line-height: 1.3;
+  opacity: 0.9;
+}
+
+/* colores suaves por tipo */
+.skill-group.super_arts h3 { color: #f1c40f; }
+.skill-group.true_arts h3  { color: #e67e22; }
+.skill-group.arts h3       { color: #9b59b6; }
+.skill-group.skill h3      { color: #3498db; }
+/* ===== PASSIVES VIEW ===== */
+
+.passives-view {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.passive-item {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #334155;
+}
+
+.passive-item strong {
+  font-size: 12px;
+  color: #f1c40f;
+}
+
+.passive-item p {
+  font-size: 11px;
+  line-height: 1.3;
+  opacity: 0.9;
+}
+
+.empty {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 12px;
+  margin-top: 40px;
+}
+/* ===== IMAGE CAROUSEL ===== */
+
+.front-image {
+  position: relative;
+}
+
+.img-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.img-nav.left { left: 5px; }
+.img-nav.right { right: 5px; }
+
+.img-nav:hover {
+  background: rgba(0,0,0,0.8);
+}
+.unit-meta {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 6px 0;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.badge.rating { color: #f1c40f; }
+.badge.rol { color: #2ecc71; }
+.badge.rareza { color: #3498db; }
+.unit-tags {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 11px;
+  opacity: 0.8;
+}
+.equipos {
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.equipos-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.slot {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+/* ===== FRONT LAYOUT FIX ===== */
+
+.front-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.unit-name {
+  margin-bottom: 2px;
+}
+
+.stats {
+  margin-top: 6px;
+}
+
+.unit-tags {
+  margin-top: 4px;
+  opacity: 0.75;
+}
+
+.equipos h4 {
+  font-size: 12px;
+  margin: 6px 0 2px;
+  opacity: 0.85;
+}
+
+.equipos-row strong {
+  width: 100%;
+  font-size: 10px;
+  opacity: 0.8;
+}
+.front-info {
+  gap: 4px; /* antes era muy grande */
+}
+
+.unit-meta {
+  margin: 2px 0;
+}
+
+.stats {
+  margin-top: 4px;
+}
+
+.stat {
+  font-size: 11px;
+}
+/* ===============================
+   SLOT COLORS (EQUIPOS)
+   =============================== */
+
+.slot {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin: 2px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 物攻 */
+.slot.atk {
+  background-color: #dc143c;
+}
+
+/* 魔攻 */
+.slot.mag {
+  background-color: #9400d3;
+}
+
+/* 防御 */
+.slot.def {
+  background-color: #1e90ff;
+}
+
+/* 援護 */
+.slot.sup {
+  background-color: #ff8c00;
+  color: #000;
+}
+
+/* 回復 */
+.slot.heal {
+  background-color: #2ecc71;
+  color: #000;
+}
+.skill-title.bullet { color: #ff5fd7; }
+.skill-title.divine { color: gold; }
+.skill-title.grand { color: #ff8c00; }
+.skill-title.special { color: #00e5ff; }
+.skill-title.link { color: #9cff00; }
