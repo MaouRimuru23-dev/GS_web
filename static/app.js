@@ -186,10 +186,21 @@ function applyFilters() {
       return false;
 
     // Rareza avanzada
-    if (currentRare2 === "ascend" && !u.rareza_texto?.includes("超覚醒"))
-      return false;
+    if (currentRare2 !== "all") {
+    
+      if (currentRare2 === "ascend" && !u.rareza_texto?.includes("超覚醒"))
+        return false;
+    
+      if (currentRare2 === "dream" && !u.rareza_texto?.includes("夢幻"))
+        return false;
+    
+      if (currentRare2 === "Awakening" && !u.rareza_texto?.includes("覚醒"))
+        return false;
+    
+      if (currentRare2 === "★5" && !u.rareza_texto?.includes("★5"))
+        return false;
+    }
 
-    if (currentRare2 === "dream" && !u.rareza_texto?.includes("夢幻"))
       return false;
 
     // Raza
@@ -598,11 +609,11 @@ function setActive(selector, value) {
   document.querySelectorAll(selector).forEach(btn => {
     btn.classList.remove("active");
 
-    if (
-      btn.dataset.element === value ||
-      btn.dataset.rare === value
-    ) {
-      btn.classList.add("active");
+    for (const key in btn.dataset) {
+      if (btn.dataset[key] === value) {
+        btn.classList.add("active");
+      }
     }
   });
 }
+
