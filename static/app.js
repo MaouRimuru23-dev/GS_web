@@ -110,6 +110,7 @@ let searchText = "";
 let cardFace = 0; // 0=front, 1=skills, 2=passives
 let imgIndex = 0;
 let currentImages = [];
+let suppressFlip = false;
 
 
 
@@ -282,17 +283,26 @@ front.innerHTML = `
 if (currentImages.length > 1) {
   const img = document.getElementById("stand-img");
 
-  document.getElementById("img-prev").onclick = (e) => {
-    e.stopPropagation();
-    imgIndex = (imgIndex - 1 + currentImages.length) % currentImages.length;
-    img.src = currentImages[imgIndex];
-  };
+ document.getElementById("img-prev").addEventListener("pointerdown", (e) => {
+  suppressFlip = true;
+  e.stopPropagation();
+});
 
-  document.getElementById("img-next").onclick = (e) => {
-    e.stopPropagation();
-    imgIndex = (imgIndex + 1) % currentImages.length;
-    img.src = currentImages[imgIndex];
-  };
+document.getElementById("img-prev").addEventListener("click", (e) => {
+  imgIndex = (imgIndex - 1 + currentImages.length) % currentImages.length;
+  img.src = currentImages[imgIndex];
+});
+
+document.getElementById("img-next").addEventListener("pointerdown", (e) => {
+  suppressFlip = true;
+  e.stopPropagation();
+});
+
+document.getElementById("img-next").addEventListener("click", (e) => {
+  imgIndex = (imgIndex + 1) % currentImages.length;
+  img.src = currentImages[imgIndex];
+});
+
 }
 function renderAllSkills(skills) {
   const grupos = agruparSkills(skills);
@@ -361,11 +371,12 @@ closeBtn.onclick = (e) => {
 
 // evitar que el click en la card cierre el modal
 cardInner.addEventListener("pointerup", (e) => {
-  // no flip si tocó botón cerrar o flechas
-  if (
-    e.target.closest(".close-btn") ||
-    e.target.closest(".img-nav")
-  ) return;
+  if (suppressFlip) {
+    suppressFlip = false; // reset inmediato
+    return;
+  }
+
+  if (e.target.closest(".close-btn")) return;
 
   e.stopPropagation();
 
