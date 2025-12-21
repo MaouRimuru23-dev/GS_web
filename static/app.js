@@ -530,13 +530,14 @@ document.querySelectorAll("[data-rare]").forEach(btn => {
 document.querySelectorAll("[data-race]").forEach(btn => {
   btn.addEventListener("click", () => {
     currentRace = btn.dataset.race === "all"
-  ? "all"
-  : Number(btn.dataset.race);
+      ? "all"
+      : Number(btn.dataset.race);
 
-    setActive("[data-race]", currentRace);
+    setActive("[data-race]", btn.dataset.race);
     applyFilters();
   });
 });
+
 
 
 // Buscador
