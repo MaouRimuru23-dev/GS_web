@@ -29,7 +29,9 @@ const RAZAS_ES = {
   "精霊族": "Espíritu",
   "魔族": "Demonio",
   "獣族": "Bestia",
-  "竜族": "Dragón"
+  "竜族": "Dragón",
+  "機族": "Maquina",
+  "巨人族":"Gigante"
 };
 const ROLES_ES = {
   "サポーター": "Soporte",
@@ -38,7 +40,8 @@ const ROLES_ES = {
   "魔法アタッカー": "Atacante",
   "サブアタッカー": "Sub DPS",
   "ディフェンダー": "Defensor",
-  "ヒーラー": "Sanador"
+  "ヒーラー": "Sanador",
+  "ブレイカー": "Breaker"
 };
 function t(map, value) {
   return map[value] || value;
@@ -106,6 +109,10 @@ function translateText(text) {
 let units = [];
 let currentElement = "all";
 let currentRare = "all";
+let currentRare2 = "all";
+let currentRace = "all";
+let currentRole = "all";
+let currentTier = "all";
 let searchText = "";
 let cardFace = 0; // 0=front, 1=skills, 2=passives
 let imgIndex = 0;
@@ -140,26 +147,43 @@ fetch("/api/units")
 function applyFilters() {
   const filtered = units.filter(u => {
 
-    // elemento
-    if (currentElement !== "all" && u.elemento !== Number(currentElement)) {
+    // Elemento
+    if (currentElement !== "all" && u.elemento !== Number(currentElement))
       return false;
-    }
 
-    // rareza
-    if (currentRare !== "all" && u.rareza !== Number(currentRare)) {
+    // Rareza base
+    if (currentRare !== "all" && u.rareza !== Number(currentRare))
       return false;
-    }
 
-    // búsqueda por nombre
-    if (searchText && !u.nombre_jp.includes(searchText)) {
+    // Rareza avanzada
+    if (currentRare2 === "ascend" && !u.rareza_texto?.includes("超覚醒"))
       return false;
-    }
+
+    if (currentRare2 === "dream" && !u.rareza_texto?.includes("夢幻"))
+      return false;
+
+    // Raza
+    if (currentRace !== "all" && t(RAZAS_ES, u.raza) !== currentRace)
+      return false;
+
+    // Rol
+    if (currentRole !== "all" && t(ROLES_ES, u.rol) !== currentRole)
+      return false;
+
+    // Tier
+    if (currentTier !== "all" && u.tier !== currentTier)
+      return false;
+
+    // Buscador
+    if (searchText && !u.nombre_jp.toLowerCase().includes(searchText))
+      return false;
 
     return true;
   });
 
   renderUnits(filtered);
 }
+
 
 // ===============================
 // RENDER
@@ -481,6 +505,37 @@ document.querySelectorAll("[data-rare]").forEach(btn => {
     setActive("[data-rare]", currentRare);
     applyFilters();
   });
+});
+document.querySelectorAll("[data-rare2]").forEach(btn => {
+  btn.onclick = () => {
+    currentRare2 = btn.dataset.rare2;
+    setActive("[data-rare2]", currentRare2);
+    applyFilters();
+  };
+});
+
+document.querySelectorAll("[data-race]").forEach(btn => {
+  btn.onclick = () => {
+    currentRace = btn.dataset.race;
+    setActive("[data-race]", currentRace);
+    applyFilters();
+  };
+});
+
+document.querySelectorAll("[data-role]").forEach(btn => {
+  btn.onclick = () => {
+    currentRole = btn.dataset.role;
+    setActive("[data-role]", currentRole);
+    applyFilters();
+  };
+});
+
+document.querySelectorAll("[data-tier]").forEach(btn => {
+  btn.onclick = () => {
+    currentTier = btn.dataset.tier;
+    setActive("[data-tier]", currentTier);
+    applyFilters();
+  };
 });
 
 // Buscador
