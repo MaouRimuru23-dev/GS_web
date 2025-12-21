@@ -14,7 +14,7 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 15px;
+  gap: 12px;
 }
 
 .card {
@@ -390,3 +390,63 @@ h1 {
 .skill-title.grand { color: #ff8c00; }
 .skill-title.special { color: #00e5ff; }
 .skill-title.link { color: #9cff00; }
+
+/* ===============================
+   RESPONSIVE – MOBILE
+   =============================== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  /* Cards de la lista */
+  .card {
+    padding: 8px;
+  }
+
+  .card .name {
+    font-size: 12px;
+  }
+
+  /* Modal ocupa casi toda la pantalla */
+  #unit-card {
+    width: 95vw;
+    height: 90vh;
+    max-width: none;
+  }
+
+  .front-image {
+    height: 45%;
+  }
+
+  .unit-name {
+    font-size: 14px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .stat {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: unset;
+  }
+
+  .skill-item p,
+  .passive-item p {
+    font-size: 12px;
+  }
+
+  /* Botones del carrusel más grandes (dedos) */
+  .img-nav {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+}
