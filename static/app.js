@@ -91,6 +91,17 @@ const SKILL_SECTIONS = {
   link: "CROSS ARTS"
 };
 
+const NOMBRES_ES = {
+  "フェン": "Fen",
+  "ロイ": "Roy",
+  "ミラ": "Mira",
+  // ...
+};
+
+function nombreES(nombreJP) {
+  return NOMBRES_ES[nombreJP] || null;
+}
+
 function translateText(text) {
   let result = text;
   Object.keys(JP_TERMS).forEach(jp => {
@@ -111,6 +122,8 @@ let cardFace = 0; // 0=front, 1=skills, 2=passives
 let imgIndex = 0;
 let currentImages = [];
 let suppressFlip = false;
+let currentRace = "all";
+
 
 
 const loading = document.getElementById("loading");
@@ -165,6 +178,9 @@ function applyFilters() {
     if (searchText && !u.nombre_jp.includes(searchText)) {
       return false;
     }
+    if (currentRace !== "all" && unit.race !== currentRace) {
+  return false;
+}
 
     return true;
   });
@@ -493,6 +509,14 @@ document.querySelectorAll("[data-rare]").forEach(btn => {
     applyFilters();
   });
 });
+document.querySelectorAll("[data-race]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentRace = btn.dataset.race;
+    setActive("[data-race]", currentRace);
+    applyFilters();
+  });
+});
+
 
 // Buscador
 const normalize = s => (s || "").toLowerCase();
