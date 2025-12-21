@@ -361,8 +361,11 @@ closeBtn.onclick = (e) => {
 
 // evitar que el click en la card cierre el modal
 cardInner.addEventListener("pointerup", (e) => {
-  // no flip si tocó el botón cerrar
-  if (e.target.closest(".close-btn")) return;
+  // no flip si tocó botón cerrar o flechas
+  if (
+    e.target.closest(".close-btn") ||
+    e.target.closest(".img-nav")
+  ) return;
 
   e.stopPropagation();
 
