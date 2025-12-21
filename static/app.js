@@ -180,9 +180,15 @@ function applyFilters() {
     // =====================
     // RAZA (JP → ES)
     // =====================
-    if (currentRace !== "all" && t(RAZAS_ES, u.raza) !== currentRace) {
-      return false;
-    }
+    if (currentRace !== "all") {
+  const rawRace = (u.raza ?? u.race ?? "").trim();       // valor real del JSON
+  const raceES  = t(RAZAS_ES, rawRace).trim();           // mapeo JP→ES si aplica
+
+  // si no existe raza en el JSON base, no podemos filtrar (evita dejar todo vacío)
+  if (!rawRace) return true;
+
+  if (raceES !== currentRace) return false;
+}
 
     // =====================
     // BÚSQUEDA
