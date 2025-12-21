@@ -555,6 +555,9 @@ h1 {
   color: #cbd5f5;
   font-size: 14px;
 }
+#loading.hidden {
+  display: none !important;
+}
 
 .spinner {
   width: 36px;
