@@ -1,5 +1,11 @@
 import requests
 from bs4 import BeautifulSoup, NavigableString, Tag
+import os
+import json
+
+CACHE_DIR = "data/unit_details"
+os.makedirs(CACHE_DIR, exist_ok=True)
+
 
 BASE_HOST = "https://altema.jp"
 
@@ -35,6 +41,13 @@ def inferir_sistema(title: str) -> str:
 
 
 def scrape_unit_detail(unit_page_id: int):
+    cache_file = os.path.join(CACHE_DIR, f"{unit_page_id}.json")
+    # ===============================
+    # CACHE HIT
+    # ===============================
+    if os.path.exists(cache_file):
+        with open(cache_file, "r", encoding="utf-8") as f:
+            return json.load(f)
     url = f"{BASE_HOST}/grandsummoners/unit/{unit_page_id}"
     res = requests.get(url, headers=HEADERS, timeout=30)
     res.raise_for_status()
@@ -256,7 +269,13 @@ def scrape_unit_detail(unit_page_id: int):
                         if slot:
                             data["equipos"]["maximo"].append(slot)
 
-        return data
+        # ===============================
+    # GUARDAR CACHE
+    # ===============================
+    with open(cache_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    return data
 
 
 # ===============================
