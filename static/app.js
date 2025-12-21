@@ -160,35 +160,47 @@ fetch("/api/units")
 // ===============================
 // FILTROS
 // ===============================
-
 function applyFilters() {
   const filtered = units.filter(u => {
 
-    // elemento
+    // =====================
+    // ELEMENTO
+    // =====================
     if (currentElement !== "all" && u.elemento !== Number(currentElement)) {
       return false;
     }
 
-    // rareza
+    // =====================
+    // RAREZA
+    // =====================
     if (currentRare !== "all" && u.rareza !== Number(currentRare)) {
       return false;
     }
 
-    // búsqueda por nombre
-    if (searchText && !u.nombre_jp.includes(searchText)) {
+    // =====================
+    // RAZA (JP → ES)
+    // =====================
+    if (currentRace !== "all" && t(RAZAS_ES, u.raza) !== currentRace) {
       return false;
     }
-    // raza (u.raza viene en JP: 神族, 人族, etc.)
-if (currentRace !== "all" && t(RAZAS_ES, u.raza) !== currentRace) {
-  return false;
-}
 
+    // =====================
+    // BÚSQUEDA
+    // =====================
+    if (searchText) {
+      const jp = (u.nombre_jp || "").toLowerCase();
+      const es = (nombreES(u.nombre_jp) || "").toLowerCase();
+      if (!jp.includes(searchText) && !es.includes(searchText)) {
+        return false;
+      }
+    }
 
     return true;
   });
 
   renderUnits(filtered);
 }
+
 
 // ===============================
 // RENDER
