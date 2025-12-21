@@ -144,19 +144,23 @@ let suppressFlip = false;
 // ===============================
 
 fetch("/api/units")
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) throw new Error("API error " + res.status);
+    return res.json();
+  })
   .then(data => {
     units = data;
-
-    // estado inicial
-    setActive("[data-element]", "all");
-    setActive("[data-rare]", "all");
-
     applyFilters();
   })
   .catch(err => {
     console.error("Error cargando unidades:", err);
+    container.innerHTML = `
+      <p style="text-align:center;color:#f87171">
+        Error cargando datos del servidor
+      </p>
+    `;
   });
+
 
 // ===============================
 // FILTROS
@@ -226,10 +230,11 @@ function renderUnits(list) {
 
     card.innerHTML = `
       <img src="${unit.imagen}" alt="${unit.nombre_jp}" width="60" height="60">
-      <<div class="name">
+      <div class="name">
   ${nombreES(unit.nombre_jp)}
   <small class="jp-name">${unit.nombre_jp}</small>
 </div>
+
 
     `;
 
