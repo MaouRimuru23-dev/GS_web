@@ -46,6 +46,10 @@ const ROLES_ES = {
 function t(map, value) {
   return map[value] || value;
 }
+function nombreES(nombreJP) {
+  return NOMBRES_ES[nombreJP] || nombreJP;
+}
+
 const JP_TERMS = {
   "物理ダメージ": "daño físico ",
   "魔法ダメージ": "daño mágico ",
@@ -93,6 +97,20 @@ const SKILL_SECTIONS = {
   special: "MEGA SKILL",
   link: "CROSS ARTS"
 };
+
+// ===============================
+// NOMBRES DE UNIDADES (JP → ES)
+// ===============================
+const NOMBRES_ES = {
+  "ロイ": "Roy",
+  "ミラ": "Mira",
+  "レイアス": "Rayas",
+  "フェン": "Fen",
+  "セリア": "Celia",
+  "ベリック": "Berwick",
+  // sigue creciendo poco a poco
+};
+
 
 function translateText(text) {
   let result = text;
@@ -175,8 +193,14 @@ function applyFilters() {
       return false;
 
     // Buscador
-    if (searchText && !u.nombre_jp.toLowerCase().includes(searchText))
-      return false;
+    if (searchText) {
+  const jp = u.nombre_jp.toLowerCase();
+  const es = (NOMBRES_ES[u.nombre_jp] || "").toLowerCase();
+
+  if (!jp.includes(searchText) && !es.includes(searchText))
+    return false;
+}
+
 
     return true;
   });
@@ -202,7 +226,11 @@ function renderUnits(list) {
 
     card.innerHTML = `
       <img src="${unit.imagen}" alt="${unit.nombre_jp}" width="60" height="60">
-      <div class="name">${unit.nombre_jp}</div>
+      <<div class="name">
+  ${nombreES(unit.nombre_jp)}
+  <small class="jp-name">${unit.nombre_jp}</small>
+</div>
+
     `;
 
     card.addEventListener("click", () => {
@@ -248,7 +276,7 @@ front.innerHTML = `
   <div class="front-info">
 
     <!-- NOMBRE -->
-    <h2 class="unit-name">${data.nombre}</h2>
+    <h2 class="unit-name">${nombreES(data.nombre)}</h2>
 
     <!-- META -->
     <div class="unit-meta">
