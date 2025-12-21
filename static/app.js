@@ -205,7 +205,9 @@ function renderBaseballCard(data) {
   const modal = document.getElementById("unit-modal");
   const front = document.getElementById("card-front");
   const back  = document.getElementById("card-back");
-  const card  = document.getElementById("unit-card");
+  const card = document.getElementById("unit-card");
+  const cardInner = card.querySelector(".card-inner");
+
   imgIndex = 0;
   currentImages = data.imagenes_grandes || [data.imagen_grande];
 
@@ -358,8 +360,8 @@ closeBtn.onclick = (e) => {
 
 
 // evitar que el click en la card cierre el modal
-card.addEventListener("pointerup", (e) => {
-  // si tocó el botón cerrar, no flip
+cardInner.addEventListener("pointerup", (e) => {
+  // no flip si tocó el botón cerrar
   if (e.target.closest(".close-btn")) return;
 
   e.stopPropagation();
@@ -381,6 +383,7 @@ card.addEventListener("pointerup", (e) => {
     `;
   }
 });
+
 
 
 function getSlotClass(tipo) {
