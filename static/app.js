@@ -180,15 +180,13 @@ function applyFilters() {
     // =====================
     // RAZA (JP → ES)
     // =====================
-    if (currentRace !== "all") {
-  const rawRace = (u.raza ?? u.race ?? "").trim();       // valor real del JSON
-  const raceES  = t(RAZAS_ES, rawRace).trim();           // mapeo JP→ES si aplica
-
-  // si no existe raza en el JSON base, no podemos filtrar (evita dejar todo vacío)
-  if (!rawRace) return true;
-
-  if (raceES !== currentRace) return false;
+    // =====================
+// RAZA (numérica, igual que rareza)
+// =====================
+if (currentRace !== "all" && u.raza !== Number(currentRace)) {
+  return false;
 }
+
 
     // =====================
     // BÚSQUEDA
@@ -531,7 +529,10 @@ document.querySelectorAll("[data-rare]").forEach(btn => {
 });
 document.querySelectorAll("[data-race]").forEach(btn => {
   btn.addEventListener("click", () => {
-    currentRace = btn.dataset.race;
+    currentRace = btn.dataset.race === "all"
+  ? "all"
+  : Number(btn.dataset.race);
+
     setActive("[data-race]", currentRace);
     applyFilters();
   });
