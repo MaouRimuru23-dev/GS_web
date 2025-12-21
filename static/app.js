@@ -353,7 +353,9 @@ document.getElementById("close-modal").onclick = (e) => {
   cardFace = 0;
   card.classList.remove("flipped");
 };
-
+// IMPORTANTÍSIMO para móvil:
+closeBtn.addEventListener("pointerdown", closeModal, { passive: false });
+closeBtn.addEventListener("click", closeModal);
 // cerrar solo si se hace click fuera de la card
 modal.onclick = () => modal.classList.add("hidden");
 
