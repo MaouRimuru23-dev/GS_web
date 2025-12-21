@@ -347,39 +347,41 @@ function agruparSkills(skills) {
   modal.classList.remove("hidden");
   card.classList.remove("flipped");
 // botón cerrar
-document.getElementById("close-modal").onclick = (e) => {
+const closeBtn = document.getElementById("close-modal");
+closeBtn.onclick = (e) => {
   e.stopPropagation();
   modal.classList.add("hidden");
   cardFace = 0;
   card.classList.remove("flipped");
 };
-// IMPORTANTÍSIMO para móvil:
-closeBtn.addEventListener("pointerdown", closeModal, { passive: false });
-closeBtn.addEventListener("click", closeModal);
-// cerrar solo si se hace click fuera de la card
-modal.onclick = () => modal.classList.add("hidden");
+
+
 
 // evitar que el click en la card cierre el modal
-card.onclick = (e) => {
-  e.stopPropagation();
-  cardFace = (cardFace + 1) % 3;
+card.addEventListener("pointerup", (e) => {
+  // si tocó el botón cerrar, no flip
+  if (e.target.closest(".close-btn")) return;
 
+  e.stopPropagation();
+
+  cardFace = (cardFace + 1) % 3;
   card.classList.toggle("flipped", cardFace !== 0);
 
   if (cardFace === 1) {
-  back.innerHTML = `
-    <div class="skills-view">
-      ${renderAllSkills(data.skills)}
-    </div>
-  `;
-} else if (cardFace === 2) {
+    back.innerHTML = `
+      <div class="skills-view">
+        ${renderAllSkills(data.skills)}
+      </div>
+    `;
+  } else if (cardFace === 2) {
     back.innerHTML = `
       <div class="passives-view">
         ${renderPassivas(data.passivas)}
       </div>
     `;
   }
-};
+});
+
 
 function getSlotClass(tipo) {
   if (tipo.includes("物")) return "atk";     // 物攻
