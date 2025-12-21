@@ -113,25 +113,36 @@ let currentImages = [];
 let suppressFlip = false;
 
 
+const loading = document.getElementById("loading");
 
 // ===============================
 // FETCH INICIAL
 // ===============================
 
+loading.classList.remove("hidden");
+container.classList.add("hidden");
+
 fetch("/api/units")
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) throw new Error("API error " + res.status);
+    return res.json();
+  })
   .then(data => {
     units = data;
 
-    // estado inicial
-    setActive("[data-element]", "all");
-    setActive("[data-rare]", "all");
+    loading.classList.add("hidden");
+    container.classList.remove("hidden");
 
-    applyFilters();
+    applyFilters(); // o renderUnits(units)
   })
   .catch(err => {
     console.error("Error cargando unidades:", err);
+
+    loading.innerHTML = `
+      <p style="color:#f87171">Error cargando unidades</p>
+    `;
   });
+
 
 // ===============================
 // FILTROS
