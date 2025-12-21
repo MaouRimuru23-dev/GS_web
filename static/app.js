@@ -484,10 +484,15 @@ document.querySelectorAll("[data-rare]").forEach(btn => {
 });
 
 // Buscador
+const normalize = s => (s || "").toLowerCase();
+
 document.getElementById("search").addEventListener("input", e => {
-  searchText = e.target.value.trim();
+  searchText = normalize(e.target.value);
   applyFilters();
 });
+document.getElementById("toggle-filters").onclick = () => {
+  document.getElementById("filters").classList.toggle("hidden");
+};
 
 // ===============================
 // UX UTILITIES

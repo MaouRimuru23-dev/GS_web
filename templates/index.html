@@ -11,6 +11,28 @@
 <body>
 
   <h1>📜 Lista de Unidades</h1>
+  <div id="top-bar">
+  <input id="search" type="search" placeholder="Buscar unidad..." />
+  <button id="toggle-filters">Filtros</button>
+</div>
+
+<div id="filters" class="hidden">
+  <div class="filter-group">
+    <button data-element="all" class="active">Todos</button>
+    <button data-element="1">Fuego</button>
+    <button data-element="2">Agua</button>
+    <button data-element="3">Tierra</button>
+    <button data-element="4">Luz</button>
+    <button data-element="5">Oscuridad</button>
+  </div>
+
+  <div class="filter-group">
+    <button data-rare="all" class="active">Todas</button>
+    <button data-rare="5">★5</button>
+    <button data-rare="6">Awakening</button>
+  </div>
+</div>
+
 
   <!-- GRID DE CARTAS -->
   <div id="unit-container" class="grid"></div>
