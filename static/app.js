@@ -177,55 +177,86 @@ fetch("/api/units")
 function applyFilters() {
   const filtered = units.filter(u => {
 
-    // Elemento
-    if (currentElement !== "all" && u.elemento !== Number(currentElement))
-      return false;
+    /* =====================
+       ELEMENTO
+       ===================== */
+    if (
+      currentElement !== "all" &&
+      u.elemento !== Number(currentElement)
+    ) return false;
 
-    // Rareza base
-    if (currentRare !== "all" && u.rareza !== Number(currentRare))
-      return false;
+    /* =====================
+       RAREZA BASE (5★ / Awakening)
+       ===================== */
+    if (
+      currentRare !== "all" &&
+      u.rareza !== Number(currentRare)
+    ) return false;
 
-    // Rareza avanzada
+    /* =====================
+       RAREZA AVANZADA
+       ===================== */
     if (currentRare2 !== "all") {
-    
-      if (currentRare2 === "ascend" && !u.rareza_texto?.includes("超覚醒"))
-        return false;
-    
-      if (currentRare2 === "dream" && !u.rareza_texto?.includes("夢幻"))
-        return false;
-    
-      if (currentRare2 === "Awakening" && !u.rareza_texto?.includes("覚醒"))
-        return false;
-    
-      if (currentRare2 === "★5" && !u.rareza_texto?.includes("★5"))
-        return false;
+
+      if (
+        currentRare2 === "ascend" &&
+        !u.rareza_texto?.includes("超覚醒")
+      ) return false;
+
+      if (
+        currentRare2 === "dream" &&
+        !u.rareza_texto?.includes("夢幻")
+      ) return false;
+
+      if (
+        currentRare2 === "Awakening" &&
+        !u.rareza_texto?.includes("覚醒")
+      ) return false;
+
+      if (
+        currentRare2 === "★5" &&
+        !u.rareza_texto?.includes("★5")
+      ) return false;
     }
 
-      return false;
+    /* =====================
+       RAZA
+       ===================== */
+    if (
+      currentRace !== "all" &&
+      t(RAZAS_ES, u.raza) !== currentRace
+    ) return false;
 
-    // Raza
-    if (currentRace !== "all" && t(RAZAS_ES, u.raza) !== currentRace)
-      return false;
+    /* =====================
+       ROL
+       ===================== */
+    if (
+      currentRole !== "all" &&
+      t(ROLES_ES, u.rol) !== currentRole
+    ) return false;
 
-    // Rol
-    if (currentRole !== "all" && t(ROLES_ES, u.rol) !== currentRole)
-      return false;
+    /* =====================
+       TIER
+       ===================== */
+    if (
+      currentTier !== "all" &&
+      u.tier !== currentTier
+    ) return false;
 
-    // Tier
-    if (currentTier !== "all" && u.tier !== currentTier)
-      return false;
-
-    // Buscador
+    /* =====================
+       BUSCADOR (JP + ES)
+       ===================== */
     if (searchText) {
-  const jp = u.nombre_jp.toLowerCase();
-  const es = (NOMBRES_ES[u.nombre_jp] || "").toLowerCase();
+      const jp = u.nombre_jp.toLowerCase();
+      const es = (NOMBRES_ES[u.nombre_jp] || "").toLowerCase();
 
-  if (!jp.includes(searchText) && !es.includes(searchText))
-    return false;
-}
+      if (
+        !jp.includes(searchText) &&
+        !es.includes(searchText)
+      ) return false;
+    }
 
-
-    return true;
+    return true; // ← MUY IMPORTANTE: solo aquí
   });
 
   renderUnits(filtered);
