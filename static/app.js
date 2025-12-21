@@ -137,11 +137,15 @@ let imgIndex = 0;
 let currentImages = [];
 let suppressFlip = false;
 
+const loading = document.getElementById("loading");
 
 
 // ===============================
 // FETCH INICIAL
 // ===============================
+
+loading.classList.remove("hidden");
+container.classList.add("hidden");
 
 fetch("/api/units")
   .then(res => {
@@ -150,16 +154,20 @@ fetch("/api/units")
   })
   .then(data => {
     units = data;
+
+    loading.classList.add("hidden");
+    container.classList.remove("hidden");
+
     applyFilters();
   })
   .catch(err => {
     console.error("Error cargando unidades:", err);
-    container.innerHTML = `
-      <p style="text-align:center;color:#f87171">
-        Error cargando datos del servidor
-      </p>
+
+    loading.innerHTML = `
+      <p style="color:#f87171">Error cargando unidades</p>
     `;
   });
+
 
 
 // ===============================
