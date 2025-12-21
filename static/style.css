@@ -450,3 +450,11 @@ h1 {
     padding: 8px 10px;
   }
 }
+/* ===============================
+   MOBILE GRID FIX (IMPORTANTE)
+   =============================== */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
