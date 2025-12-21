@@ -29,9 +29,7 @@ const RAZAS_ES = {
   "精霊族": "Espíritu",
   "魔族": "Demonio",
   "獣族": "Bestia",
-  "竜族": "Dragón",
-  "機族": "Maquina",
-  "巨人族":"Gigante"
+  "竜族": "Dragón"
 };
 const ROLES_ES = {
   "サポーター": "Soporte",
@@ -40,16 +38,11 @@ const ROLES_ES = {
   "魔法アタッカー": "Atacante",
   "サブアタッカー": "Sub DPS",
   "ディフェンダー": "Defensor",
-  "ヒーラー": "Sanador",
-  "ブレイカー": "Breaker"
+  "ヒーラー": "Sanador"
 };
 function t(map, value) {
   return map[value] || value;
 }
-function nombreES(nombreJP) {
-  return NOMBRES_ES[nombreJP] || nombreJP;
-}
-
 const JP_TERMS = {
   "物理ダメージ": "daño físico ",
   "魔法ダメージ": "daño mágico ",
@@ -98,20 +91,6 @@ const SKILL_SECTIONS = {
   link: "CROSS ARTS"
 };
 
-// ===============================
-// NOMBRES DE UNIDADES (JP → ES)
-// ===============================
-const NOMBRES_ES = {
-  "ロイ": "Roy",
-  "ミラ": "Mira",
-  "レイアス": "Rayas",
-  "フェン": "Fen",
-  "セリア": "Celia",
-  "ベリック": "Berwick",
-  // sigue creciendo poco a poco
-};
-
-
 function translateText(text) {
   let result = text;
   Object.keys(JP_TERMS).forEach(jp => {
@@ -127,48 +106,32 @@ function translateText(text) {
 let units = [];
 let currentElement = "all";
 let currentRare = "all";
-let currentRare2 = "all";
-let currentRace = "all";
-let currentRole = "all";
-let currentTier = "all";
 let searchText = "";
 let cardFace = 0; // 0=front, 1=skills, 2=passives
 let imgIndex = 0;
 let currentImages = [];
 let suppressFlip = false;
 
-const loading = document.getElementById("loading");
 
 
 // ===============================
 // FETCH INICIAL
 // ===============================
 
-loading.classList.remove("hidden");
-container.classList.add("hidden");
-
 fetch("/api/units")
-  .then(res => {
-    if (!res.ok) throw new Error("API error " + res.status);
-    return res.json();
-  })
+  .then(res => res.json())
   .then(data => {
     units = data;
 
-    loading.classList.add("hidden");
-    container.classList.remove("hidden");
+    // estado inicial
+    setActive("[data-element]", "all");
+    setActive("[data-rare]", "all");
 
     applyFilters();
   })
   .catch(err => {
     console.error("Error cargando unidades:", err);
-
-    loading.innerHTML = `
-      <p style="color:#f87171">Error cargando unidades</p>
-    `;
   });
-
-
 
 // ===============================
 // FILTROS
@@ -177,91 +140,26 @@ fetch("/api/units")
 function applyFilters() {
   const filtered = units.filter(u => {
 
-    /* =====================
-       ELEMENTO
-       ===================== */
-    if (
-      currentElement !== "all" &&
-      u.elemento !== Number(currentElement)
-    ) return false;
-
-    /* =====================
-       RAREZA BASE (5★ / Awakening)
-       ===================== */
-    if (
-      currentRare !== "all" &&
-      u.rareza !== Number(currentRare)
-    ) return false;
-
-    /* =====================
-       RAREZA AVANZADA
-       ===================== */
-    if (currentRare2 !== "all") {
-
-      if (
-        currentRare2 === "ascend" &&
-        !u.rareza_texto?.includes("超覚醒")
-      ) return false;
-
-      if (
-        currentRare2 === "dream" &&
-        !u.rareza_texto?.includes("夢幻")
-      ) return false;
-
-      if (
-        currentRare2 === "Awakening" &&
-        !u.rareza_texto?.includes("覚醒")
-      ) return false;
-
-      if (
-        currentRare2 === "★5" &&
-        !u.rareza_texto?.includes("★5")
-      ) return false;
+    // elemento
+    if (currentElement !== "all" && u.elemento !== Number(currentElement)) {
+      return false;
     }
 
-    /* =====================
-       RAZA
-       ===================== */
-    if (
-      currentRace !== "all" &&
-      t(RAZAS_ES, u.raza) !== currentRace
-    ) return false;
-
-    /* =====================
-       ROL
-       ===================== */
-    if (
-      currentRole !== "all" &&
-      t(ROLES_ES, u.rol) !== currentRole
-    ) return false;
-
-    /* =====================
-       TIER
-       ===================== */
-    if (
-      currentTier !== "all" &&
-      u.tier !== currentTier
-    ) return false;
-
-    /* =====================
-       BUSCADOR (JP + ES)
-       ===================== */
-    if (searchText) {
-      const jp = u.nombre_jp.toLowerCase();
-      const es = (NOMBRES_ES[u.nombre_jp] || "").toLowerCase();
-
-      if (
-        !jp.includes(searchText) &&
-        !es.includes(searchText)
-      ) return false;
+    // rareza
+    if (currentRare !== "all" && u.rareza !== Number(currentRare)) {
+      return false;
     }
 
-    return true; // ← MUY IMPORTANTE: solo aquí
+    // búsqueda por nombre
+    if (searchText && !u.nombre_jp.includes(searchText)) {
+      return false;
+    }
+
+    return true;
   });
 
   renderUnits(filtered);
 }
-
 
 // ===============================
 // RENDER
@@ -280,12 +178,7 @@ function renderUnits(list) {
 
     card.innerHTML = `
       <img src="${unit.imagen}" alt="${unit.nombre_jp}" width="60" height="60">
-      <div class="name">
-  ${nombreES(unit.nombre_jp)}
-  <small class="jp-name">${unit.nombre_jp}</small>
-</div>
-
-
+      <div class="name">${unit.nombre_jp}</div>
     `;
 
     card.addEventListener("click", () => {
@@ -331,7 +224,7 @@ front.innerHTML = `
   <div class="front-info">
 
     <!-- NOMBRE -->
-    <h2 class="unit-name">${nombreES(data.nombre)}</h2>
+    <h2 class="unit-name">${data.nombre}</h2>
 
     <!-- META -->
     <div class="unit-meta">
@@ -589,37 +482,6 @@ document.querySelectorAll("[data-rare]").forEach(btn => {
     applyFilters();
   });
 });
-document.querySelectorAll("[data-rare2]").forEach(btn => {
-  btn.onclick = () => {
-    currentRare2 = btn.dataset.rare2;
-    setActive("[data-rare2]", currentRare2);
-    applyFilters();
-  };
-});
-
-document.querySelectorAll("[data-race]").forEach(btn => {
-  btn.onclick = () => {
-    currentRace = btn.dataset.race;
-    setActive("[data-race]", currentRace);
-    applyFilters();
-  };
-});
-
-document.querySelectorAll("[data-role]").forEach(btn => {
-  btn.onclick = () => {
-    currentRole = btn.dataset.role;
-    setActive("[data-role]", currentRole);
-    applyFilters();
-  };
-});
-
-document.querySelectorAll("[data-tier]").forEach(btn => {
-  btn.onclick = () => {
-    currentTier = btn.dataset.tier;
-    setActive("[data-tier]", currentTier);
-    applyFilters();
-  };
-});
 
 // Buscador
 const normalize = s => (s || "").toLowerCase();
@@ -640,11 +502,11 @@ function setActive(selector, value) {
   document.querySelectorAll(selector).forEach(btn => {
     btn.classList.remove("active");
 
-    for (const key in btn.dataset) {
-      if (btn.dataset[key] === value) {
-        btn.classList.add("active");
-      }
+    if (
+      btn.dataset.element === value ||
+      btn.dataset.rare === value
+    ) {
+      btn.classList.add("active");
     }
   });
 }
-
