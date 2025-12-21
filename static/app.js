@@ -346,6 +346,13 @@ function agruparSkills(skills) {
 
   modal.classList.remove("hidden");
   card.classList.remove("flipped");
+// botón cerrar
+document.getElementById("close-modal").onclick = (e) => {
+  e.stopPropagation();
+  modal.classList.add("hidden");
+  cardFace = 0;
+  card.classList.remove("flipped");
+};
 
 // cerrar solo si se hace click fuera de la card
 modal.onclick = () => modal.classList.add("hidden");
