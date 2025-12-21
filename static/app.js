@@ -178,9 +178,11 @@ function applyFilters() {
     if (searchText && !u.nombre_jp.includes(searchText)) {
       return false;
     }
-    if (currentRace !== "all" && unit.race !== currentRace) {
+    // raza (u.raza viene en JP: 神族, 人族, etc.)
+if (currentRace !== "all" && t(RAZAS_ES, u.raza) !== currentRace) {
   return false;
 }
+
 
     return true;
   });
@@ -536,12 +538,9 @@ document.getElementById("toggle-filters").onclick = () => {
 function setActive(selector, value) {
   document.querySelectorAll(selector).forEach(btn => {
     btn.classList.remove("active");
-
-    if (
-      btn.dataset.element === value ||
-      btn.dataset.rare === value
-    ) {
-      btn.classList.add("active");
+    for (const key in btn.dataset) {
+      if (btn.dataset[key] === value) btn.classList.add("active");
     }
   });
 }
+
