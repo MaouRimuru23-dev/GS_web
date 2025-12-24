@@ -3,10 +3,13 @@ from bs4 import BeautifulSoup
 import json
 import re
 from urllib.parse import urljoin
+import os
 
 BASE_URL = "https://altema.jp/grandsummoners/unitlist"
 BASE_HOST = "https://altema.jp"
 ICON_BASE = "https://img.altema.jp/grandsummoners/unit/icon/{}.jpg"
+ICON_CACHE_DIR = "static/images/icons"
+
 
 HEADERS = {
     "User-Agent": (
@@ -15,6 +18,22 @@ HEADERS = {
         "Chrome/120.0.0.0 Safari/537.36"
     )
 }
+def cache_image(url, local_path):
+    os.makedirs(os.path.dirname(local_path), exist_ok=True)
+
+    if os.path.exists(local_path):
+        return local_path  # cache hit
+
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        r.raise_for_status()
+        with open(local_path, "wb") as f:
+            f.write(r.content)
+        return local_path
+    except Exception as e:
+        print("⚠️ Error cacheando imagen:", e)
+        return None
+
 
 def get_unit_list():
     res = requests.get(BASE_URL, headers=HEADERS, timeout=30)
@@ -68,16 +87,26 @@ def get_unit_list():
             syuzoku = int(s.group(1))
 
 
+        icon_url = ICON_BASE.format(unit_id)
+        local_icon_path = f"{ICON_CACHE_DIR}/{unit_id}.jpg"
+        
+        cached_icon = cache_image(icon_url, local_icon_path)
+        
         units[unit_page_id] = {
-        "id": unit_page_id,
-        "unit_id": unit_id,
-        "nombre_jp": name,
-        "elemento": zokusei,
-        "rareza": rea,
-        "raza": syuzoku,
-        "imagen": ICON_BASE.format(unit_id),
-        "url": urljoin(BASE_HOST, href)
-    }
+            "id": unit_page_id,
+            "unit_id": unit_id,
+            "nombre_jp": name,
+            "elemento": zokusei,
+            "rareza": rea,
+            "raza": syuzoku,
+        
+            # imágenes híbridas
+            "imagen_local": f"/{local_icon_path}" if cached_icon else None,
+            "imagen_externa": icon_url,
+        
+            "url": urljoin(BASE_HOST, href)
+        }
+        
     
 
     return list(units.values())
