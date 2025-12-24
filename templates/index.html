@@ -14,7 +14,7 @@
   <div id="top-bar">
   <input id="search" type="search" placeholder="Buscar unidad..." />
   <button id="toggle-filters">Filtros</button>
-
+</div>
 
 <div id="filters" class="hidden">
   <div class="filter-group">
@@ -28,35 +28,68 @@
 
   <div class="filter-group">
     <button data-rare="all" class="active">Todas</button>
-    <button data-rare="2">★1 ~ ★2</button>
-    <button data-rare="3">★2 ~ ★3</button>
-    <button data-rare="4">★3 ~ ★4</button>
-    <button data-rare="5">★4 ~ ★5</button>
-    <button data-rare="6">★5 ~ Awakening ~ Dream</button>
-    <button data-rare="7">Ascend</button>
-
+    <button data-rare="5">★5</button>
+    <button data-rare="6">Awakening</button>
   </div>
   <div class="filter-group" id="filter-race">
   <button data-race="all" class="active">Todas</button>
-  <button data-race="humano">Humano</button>
-  <button data-race="gigante">Bestia</button>
-  <button data-race="dragon">Espíritu</button>
-  <button data-race="bestia">Gigante</button>
-  <button data-race="maquina">Maquina</button>
-  <button data-race="espiritu">Dragon</button>
-  <button data-race="dios">Dios</button>
-  <button data-race="demonio">Demonio</button>
+  <button data-race="Humano">Humano</button>
+  <button data-race="Dios">Dios</button>
+  <button data-race="Demonio">Demonio</button>
+  <button data-race="Bestia">Bestia</button>
+  <button data-race="Dragón">Dragón</button>
+  <button data-race="Espíritu">Espíritu</button>
 </div>
 
 </div>
-</div>
+
 <div id="loading" class="loading hidden">
   <div class="spinner"></div>
   <p>Cargando unidades...</p>
 </div>
 
   <!-- GRID DE CARTAS -->
-  <div id="unit-container" class="grid"></div>
+  <div id="skeleton-container" class="grid">
+  <!-- 8–12 skeleton cards -->
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+</div>
+
+<div id="unit-container" class="grid hidden"></div>
 <!-- MODAL BASEBALL CARD -->
 <div id="unit-modal" class="modal hidden">
   <div class="card" id="unit-card">
