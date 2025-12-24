@@ -9,6 +9,9 @@ BASE_URL = "https://altema.jp/grandsummoners/unitlist"
 BASE_HOST = "https://altema.jp"
 ICON_BASE = "https://img.altema.jp/grandsummoners/unit/icon/{}.jpg"
 ICON_CACHE_DIR = "static/images/icons"
+CACHE_FILE = "data/units.json"
+os.makedirs("data", exist_ok=True)
+
 
 
 HEADERS = {
@@ -36,6 +39,10 @@ def cache_image(url, local_path):
 
 
 def get_unit_list():
+     # ✅ 1. Si existe cache → usarlo
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
     res = requests.get(BASE_URL, headers=HEADERS, timeout=30)
     res.raise_for_status()
 
@@ -109,8 +116,14 @@ def get_unit_list():
 
     
 
-    return list(units.values())
-
+    data = list(units.values())
+    
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    return data
+    
+    
 
 if __name__ == "__main__":
     data = get_unit_list()
