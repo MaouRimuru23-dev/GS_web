@@ -89,9 +89,9 @@ def get_unit_list():
 
         icon_url = ICON_BASE.format(unit_id)
         local_icon_path = f"{ICON_CACHE_DIR}/{unit_id}.jpg"
-        
-        cached_icon = cache_image(icon_url, local_icon_path)
-        
+
+        #cached_icon = cache_image(icon_url, local_icon_path)
+
         units[unit_page_id] = {
             "id": unit_page_id,
             "unit_id": unit_id,
@@ -99,14 +99,14 @@ def get_unit_list():
             "elemento": zokusei,
             "rareza": rea,
             "raza": syuzoku,
-        
+
             # imágenes híbridas
-            "imagen_local": f"/{local_icon_path}" if cached_icon else None,
+            "imagen_local": f"/{local_icon_path}" if os.path.exists(local_icon_path) else None,
             "imagen_externa": icon_url,
-        
+
             "url": urljoin(BASE_HOST, href)
         }
-        
+
     
 
     return list(units.values())
