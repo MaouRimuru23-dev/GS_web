@@ -132,8 +132,8 @@ const loading = document.getElementById("loading");
 // FETCH INICIAL
 // ===============================
 
-loading.classList.remove("hidden");
-container.classList.add("hidden");
+const skeleton = document.getElementById("skeleton-container");
+
 
 fetch("/api/units")
   .then(res => {
@@ -143,18 +143,15 @@ fetch("/api/units")
   .then(data => {
     units = data;
 
-    loading.classList.add("hidden");
+    skeleton.classList.add("hidden");   // 👈 ocultar skeleton
     container.classList.remove("hidden");
 
-    applyFilters(); // o renderUnits(units)
+    applyFilters();
   })
   .catch(err => {
     console.error("Error cargando unidades:", err);
-
-    loading.innerHTML = `
-      <p style="color:#f87171">Error cargando unidades</p>
-    `;
   });
+
 
 
 // ===============================
@@ -225,7 +222,7 @@ function renderUnits(list) {
       <img src="${imgSrc}" alt="${unit.nombre_jp}" width="60" height="60">
       <div class="name">${unit.nombre_jp}</div>
     `;
-      
+
 
     card.addEventListener("click", () => {
   openUnitCard(unit.id);

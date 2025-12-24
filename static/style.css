@@ -488,19 +488,11 @@ h1 {
 #top-bar {
   position: sticky;
   top: 0;
-  z-index: 20;
-  background: #0f172a;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
   padding: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* fila superior */
-.top-row {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  background: #0f172a;
 }
 
 #search {
@@ -517,51 +509,40 @@ h1 {
   border: none;
   background: #334155;
   color: #fff;
-  cursor: pointer;
 }
-
 
 /* ===== FILTERS ===== */
 #filters {
-  padding: 6px 0;
-  background: #0f172a;
+  padding: 10px;
+  background: #0b1220;
 }
 
-#filters.hidden {
-  display: none;
-}
+#filters.hidden { display: none; }
 
 .filter-group {
   display: flex;
-  gap: 6px;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .filter-group button {
-  padding: 6px 10px;
+  padding: 8px 10px;
   border-radius: 999px;
   border: none;
   background: #1e293b;
   color: #fff;
-  font-size: 12px;
 }
 
 .filter-group button.active {
   background: #3498db;
 }
 
-
+/* PC: filtros visibles siempre */
 @media (min-width: 768px) {
-  #filters {
-    display: block !important;
-  }
-
-  #toggle-filters {
-    display: none;
-  }
+  #filters { display: block !important; }
+  #toggle-filters { display: none; }
 }
-
 /* ===============================
    LOADING
    =============================== */
@@ -590,4 +571,27 @@ h1 {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+/* ===== SKELETON UI ===== */
+
+.skeleton-card {
+  height: 140px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #1e293b 25%,
+    #334155 37%,
+    #1e293b 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
