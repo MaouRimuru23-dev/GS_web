@@ -74,7 +74,9 @@ function renderEquips(list) {
     const card = document.createElement("div");
     card.className = "card";
 
-    const imgSrc = e.imagen_local || e.imagen;
+    //const imgSrc = e.imagen_local || e.imagen;
+    const imgSrc = `/static/images/equips/icons/${e.id}.jpg`;
+
 
     card.innerHTML = `
       <img src="${imgSrc}" alt="${e.nombre_jp}" width="60" height="60">
