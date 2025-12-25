@@ -1,0 +1,20 @@
+{
+  "id": 14100,
+  "nombre": "まどかの弓",
+  "type_label": "魔攻",
+  "rareza_text": "★6",
+  "stats": {
+    "hp": 0,
+    "atk": 600,
+    "def": 0
+  },
+  "obtencion": "まどかマギカコラボ宝具召喚前編",
+  "skill": {
+    "descripcion": "10,000%の光属性魔法ダメージ。自身が次に使用する超奥義のダメージ200%UP。使用者が光属性の場合、さらに50%UP。",
+    "ct": 45
+  },
+  "passivas": [],
+  "imagen_local": "/static/images/equips/icons/14100.jpg",
+  "imagen": "https://img.altema.jp/grandsummoners/sobi/icon/14100.jpg",
+  "url": "https://altema.jp/grandsummoners/sobi/14100"
+}

@@ -1,0 +1,105 @@
+{
+  "id": 414,
+  "nombre": "イビルアイ",
+  "imagen_grande": null,
+  "elemento": "樹",
+  "raza": "魔族",
+  "stats": {
+    "lvmax": {
+      "hp": "7,425",
+      "atk": "3,352",
+      "def": "3,141"
+    },
+    "bonus": {
+      "hp": "+1,370",
+      "atk": "+646",
+      "def": "+596"
+    }
+  },
+  "skills": [
+    {
+      "raw_title": "超奥義：魔法最強化・結晶散弾",
+      "sistema": "super_arts",
+      "descripcion": "超奥義：魔法最強化・結晶散弾\nブレイク\n2,000\n150000%の樹属性魔法ダメージ。20秒間、味方全体の奥義ゲージ6自然上昇・魔法ダメージ200%UP。",
+      "orden": 1
+    },
+    {
+      "raw_title": "真奥義：酸の飛沫",
+      "sistema": "true_arts",
+      "descripcion": "真奥義：酸の飛沫\nブレイク\n1,600\n50000%の樹属性魔法ダメージ。60秒間、自身の攻撃力150%UP・怯まなくなる。",
+      "orden": 2
+    },
+    {
+      "raw_title": "奥義：水晶防壁",
+      "sistema": "arts",
+      "descripcion": "奥義：水晶防壁\nブレイク\n-\n25秒間、味方全体の被ダメージ20%軽減。味方樹属性ユニットはさらに20%軽減。",
+      "orden": 3
+    },
+    {
+      "raw_title": "スキル：水晶の短剣",
+      "sistema": "skill",
+      "descripcion": "スキル：水晶の短剣\nブレイク\n500\nCT\n12秒\n2000%の樹属性魔法ダメージ。自身の奥義ゲージ20UP。自身が状態異常でない場合、さらに20UP。",
+      "orden": 4
+    }
+  ],
+  "passivas": [
+    {
+      "nombre": "国墜とし",
+      "descripcion": "自身がリーダーの時、クエスト開始から100秒間、味方樹属性ユニットのダメージ100%UP(重複なし)"
+    },
+    {
+      "nombre": "病気耐性Lv8",
+      "descripcion": "病気耐性80%UP"
+    },
+    {
+      "nombre": "獣族キラーLv5",
+      "descripcion": "獣族に対してのダメージ50%UP"
+    },
+    {
+      "nombre": "SPイラスト",
+      "descripcion": "クエストで得られるユニット経験値が20%UP(重複なし)。クエスト開始時、奥義ゲージ10UP(重複なし)"
+    }
+  ],
+  "rating": "SS",
+  "rol": "魔法アタッカー",
+  "rareza": "覚醒～超覚醒",
+  "cv": "花守ゆみり",
+  "imagenes_grandes": [
+    "/static/images/units/stands/1224.jpg",
+    "/static/images/units/stands/1225.jpg"
+  ],
+  "equipos": {
+    "inicial": [
+      {
+        "tipo": "魔攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 3
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 2
+      }
+    ],
+    "maximo": [
+      {
+        "tipo": "魔攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 5
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 4
+      },
+      {
+        "tipo": "防御",
+        "estrellas": 4
+      }
+    ]
+  }
+}

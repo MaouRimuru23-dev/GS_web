@@ -1,0 +1,105 @@
+{
+  "id": 479,
+  "nombre": "暁美ほむら",
+  "imagen_grande": null,
+  "elemento": "闇",
+  "raza": "人族",
+  "stats": {
+    "lvmax": {
+      "hp": "7,092",
+      "atk": "3,943",
+      "def": "3,072"
+    },
+    "bonus": {
+      "hp": "+1,339",
+      "atk": "+718",
+      "def": "+608"
+    }
+  },
+  "skills": [
+    {
+      "raw_title": "超奥義：たった一つの祈りのために",
+      "sistema": "super_arts",
+      "descripcion": "超奥義：たった一つの祈りのために\nブレイク\n2,500\n220,000%の闇属性物理ダメージ。自身の超奥義中、自身のスーパークリティカル率40%UP。クエスト中2回まで、自身の装備を全て使用可能にする。",
+      "orden": 1
+    },
+    {
+      "raw_title": "真奥義：絶望を味わわせてあげるわ",
+      "sistema": "true_arts",
+      "descripcion": "真奥義：絶望を味わわせてあげるわ\nブレイク\n1,700\n120,000%の闇属性物理ダメージ。25秒間、味方全体の装備CT速度50%UP。",
+      "orden": 2
+    },
+    {
+      "raw_title": "奥義：ここで終わらせる",
+      "sistema": "arts",
+      "descripcion": "奥義：ここで終わらせる\nブレイク\n900\n30,000%の闇属性物理ダメージ。奥義を発動する度に、自身の真奥義・超奥義ダメージ75%UP(最大600%)。20秒間、敵の闇属性・物理耐性20%DOWN。",
+      "orden": 3
+    },
+    {
+      "raw_title": "スキル：魔法少女の銃",
+      "sistema": "skill",
+      "descripcion": "スキル：魔法少女の銃\nブレイク\n500\nCT\n13秒\n3,000%の闇属性物理ダメージ。自身の奥義ゲージを味方人族の数×15UP(最大60)。",
+      "orden": 4
+    }
+  ],
+  "passivas": [
+    {
+      "nombre": "美しき刻限者",
+      "descripcion": "自身のHPが80%以上の時、クリティカル率100%UP。"
+    },
+    {
+      "nombre": "装備ダメージLv2",
+      "descripcion": "装備ダメージ20%UP"
+    },
+    {
+      "nombre": "瀕死時回避率Lv2",
+      "descripcion": "瀕死時に回避率10%UP"
+    },
+    {
+      "nombre": "SPイラスト",
+      "descripcion": "クエストで得られるユニット経験値が20%UP(重複なし)。クエスト開始時、奥義ゲージ10UP(重複なし)"
+    }
+  ],
+  "rating": "S",
+  "rol": "物理アタッカー",
+  "rareza": "覚醒～超覚醒",
+  "cv": "斎藤千和",
+  "imagenes_grandes": [
+    "/static/images/units/stands/1355.jpg",
+    "/static/images/units/stands/1356.jpg"
+  ],
+  "equipos": {
+    "inicial": [
+      {
+        "tipo": "物攻",
+        "estrellas": 5
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 3
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 2
+      }
+    ],
+    "maximo": [
+      {
+        "tipo": "物攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 5
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 4
+      },
+      {
+        "tipo": "物攻",
+        "estrellas": 4
+      }
+    ]
+  }
+}

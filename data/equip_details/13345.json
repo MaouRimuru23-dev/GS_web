@@ -1,0 +1,22 @@
+{
+  "id": 13345,
+  "nombre": "冥界書『プルトリクス』アレンジ",
+  "type_label": "援護",
+  "rareza_text": "★6",
+  "stats": {
+    "hp": 300,
+    "atk": 150,
+    "def": 150
+  },
+  "obtencion": "サマナーズロード影天景・罪流窟",
+  "skill": {
+    "descripcion": "16秒間、自分以外の味方の奥義ゲージ2UP。使用者が魔族または精霊族の場合、さらに2UP。",
+    "ct": 40
+  },
+  "passivas": [
+    "攻撃力Lv1 攻撃力5%UP"
+  ],
+  "imagen_local": "/static/images/equips/icons/13345.jpg",
+  "imagen": "https://img.altema.jp/grandsummoners/sobi/icon/13345.jpg",
+  "url": "https://altema.jp/grandsummoners/sobi/13345"
+}

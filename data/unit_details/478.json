@@ -1,0 +1,105 @@
+{
+  "id": 478,
+  "nombre": "鹿目まどか",
+  "imagen_grande": null,
+  "elemento": "光",
+  "raza": "人族",
+  "stats": {
+    "lvmax": {
+      "hp": "8,594",
+      "atk": "2,514",
+      "def": "3,522"
+    },
+    "bonus": {
+      "hp": "+1,557",
+      "atk": "+511",
+      "def": "+657"
+    }
+  },
+  "skills": [
+    {
+      "raw_title": "超奥義：希望は、あるよ",
+      "sistema": "super_arts",
+      "descripcion": "超奥義：希望は、あるよ\nブレイク\n2,400\n150,000%の光属性魔法ダメージ。味方に付与されている被ダメージUP効果を1つずつ回復。30秒間、味方全体のクリティカル率・クリティカルダメージ100%UP。",
+      "orden": 1
+    },
+    {
+      "raw_title": "真奥義：お願い、力をわたしに",
+      "sistema": "true_arts",
+      "descripcion": "真奥義：お願い、力をわたしに\nブレイク\n1,800\n30,000%の光属性魔法ダメージ。味方全体の状態異常(気絶以外)を回復。30秒間、味方全体の全ステータス40%UP。",
+      "orden": 2
+    },
+    {
+      "raw_title": "奥義：わたし…魔法少女だから",
+      "sistema": "arts",
+      "descripcion": "奥義：わたし…魔法少女だから\nブレイク\n800\n17,000%の光属性魔法ダメージ。25秒間、味方全体の被ダメージを合計12,000無効化・魔法被ダメージ25%軽減。",
+      "orden": 3
+    },
+    {
+      "raw_title": "スキル：魔法少女の弓",
+      "sistema": "skill",
+      "descripcion": "スキル：魔法少女の弓\nブレイク\n500\nCT\n13秒\n2,400%の光属性魔法ダメージ。自身の奥義ゲージ40UP。4秒間、味方全体のHP500自然回復。",
+      "orden": 4
+    }
+  ],
+  "passivas": [
+    {
+      "nombre": "友愛の女神",
+      "descripcion": "味方全体の被ダメージ30%軽減(重複なし)。味方が倒れた時に1度だけ倒れた味方を奥義ゲージ200UP・HP100%で蘇生する。"
+    },
+    {
+      "nombre": "瀕死時強化Lv3",
+      "descripcion": "瀕死時にダメージ15%UP"
+    },
+    {
+      "nombre": "瀕死時軽減Lv3",
+      "descripcion": "瀕死時に被ダメージ15%軽減"
+    },
+    {
+      "nombre": "SPイラスト",
+      "descripcion": "クエストで得られるユニット経験値が20%UP(重複なし)。クエスト開始時、奥義ゲージ10UP(重複なし)"
+    }
+  ],
+  "rating": "SS",
+  "rol": "ディフェンダー",
+  "rareza": "覚醒～超覚醒",
+  "cv": "悠木碧",
+  "imagenes_grandes": [
+    "/static/images/units/stands/1353.jpg",
+    "/static/images/units/stands/1354.jpg"
+  ],
+  "equipos": {
+    "inicial": [
+      {
+        "tipo": "魔攻",
+        "estrellas": 5
+      },
+      {
+        "tipo": "回復",
+        "estrellas": 3
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 2
+      }
+    ],
+    "maximo": [
+      {
+        "tipo": "魔攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "回復",
+        "estrellas": 5
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 4
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 4
+      }
+    ]
+  }
+}

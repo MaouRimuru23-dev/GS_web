@@ -1,0 +1,105 @@
+{
+  "id": 395,
+  "nombre": "ミリム戦闘形態",
+  "imagen_grande": null,
+  "elemento": "炎",
+  "raza": "魔族",
+  "stats": {
+    "lvmax": {
+      "hp": "7,480",
+      "atk": "3,450",
+      "def": "3,059"
+    },
+    "bonus": {
+      "hp": "+1,410",
+      "atk": "+650",
+      "def": "+582"
+    }
+  },
+  "skills": [
+    {
+      "raw_title": "超奥義：竜星爆炎覇",
+      "sistema": "super_arts",
+      "descripcion": "超奥義：竜星爆炎覇\nブレイク\n1,500\n180000%の炎属性物理ダメージ。連続で超奥義発動時、超奥義ダメージ倍率に180000%追加(最大540000%)。奥義、真奥義使用時、ダメージ倍率追加分リセット。",
+      "orden": 1
+    },
+    {
+      "raw_title": "真奥義：流星拳",
+      "sistema": "true_arts",
+      "descripcion": "真奥義：流星拳\nブレイク\n4,000\n30000%の炎属性物理ダメージ。連続で真奥義を発動した場合、真奥義のブレイク力4000UP(最大20000)。奥義、超奥義使用時、ブレイク力追加分リセット。",
+      "orden": 2
+    },
+    {
+      "raw_title": "奥義：ハハハハハハハ！",
+      "sistema": "arts",
+      "descripcion": "奥義：ハハハハハハハ！\nブレイク\n700\n22000%の炎属性物理ダメージ。自身の状態異常(気絶・麻痺・封印・氷結以外)を回復。20秒間、味方全体は怯まなくなる。",
+      "orden": 3
+    },
+    {
+      "raw_title": "スキル：隙ありだ",
+      "sistema": "skill",
+      "descripcion": "スキル：隙ありだ\nブレイク\n300\nCT\n12秒\n3000%の炎属性物理ダメージ。10秒間、敵の被ダメージ10%UP。",
+      "orden": 4
+    }
+  ],
+  "passivas": [
+    {
+      "nombre": "破壊の暴君",
+      "descripcion": "自身が状態異常でない場合、自身のダメージ・ブレイク力50%UP"
+    },
+    {
+      "nombre": "奥義自然回復Lv2",
+      "descripcion": "奥義ゲージが2ずつ自然回復する"
+    },
+    {
+      "nombre": "奥義ゲージUPLv20",
+      "descripcion": "クエスト開始時奥義ゲージ200UP"
+    },
+    {
+      "nombre": "SPイラスト",
+      "descripcion": "クエストで得られるユニット経験値が20%UP(重複なし)。クエスト開始時、奥義ゲージ10UP(重複なし)"
+    }
+  ],
+  "rating": "A",
+  "rol": "物理アタッカー",
+  "rareza": "覚醒～超覚醒",
+  "cv": "日高里菜",
+  "imagenes_grandes": [
+    "https://img.altema.jp/grandsummoners/unit/stand/1186.jpg",
+    "https://img.altema.jp/grandsummoners/unit/stand/1187.jpg"
+  ],
+  "equipos": {
+    "inicial": [
+      {
+        "tipo": "物攻",
+        "estrellas": 5
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 3
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 2
+      }
+    ],
+    "maximo": [
+      {
+        "tipo": "物攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 5
+      },
+      {
+        "tipo": "魔攻",
+        "estrellas": 4
+      },
+      {
+        "tipo": "防御",
+        "estrellas": 4
+      }
+    ]
+  }
+}

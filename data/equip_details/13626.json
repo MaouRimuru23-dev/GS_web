@@ -1,0 +1,22 @@
+{
+  "id": 13626,
+  "nombre": "ルーンマスター・レプリカ",
+  "type_label": "魔攻",
+  "rareza_text": "★6",
+  "stats": {
+    "hp": 0,
+    "atk": 600,
+    "def": 0
+  },
+  "obtencion": "26章 「運命を超えし者【HARD】」(レイアス編成時のみ)",
+  "skill": {
+    "descripcion": "15000%の光属性魔法ダメージ。10秒間、自身の魔法ダメージ100%UP・使用者が光属性の場合、10秒間、自身の命中率100%UP。",
+    "ct": 80
+  },
+  "passivas": [
+    "準快調時全体魔法ダメージLv4 自身のHPが80%以上の時、味方全体の魔法ダメージ40%UP(重複なし)"
+  ],
+  "imagen_local": "/static/images/equips/icons/13626.jpg",
+  "imagen": "https://img.altema.jp/grandsummoners/sobi/icon/13626.jpg",
+  "url": "https://altema.jp/grandsummoners/sobi/13626"
+}

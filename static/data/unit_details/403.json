@@ -1,0 +1,111 @@
+{
+  "id": 403,
+  "nombre": "聖騎士ロイ",
+  "imagen_grande": null,
+  "elemento": "水",
+  "raza": "人族",
+  "stats": {
+    "lvmax": {
+      "hp": "7,480",
+      "atk": "3,875",
+      "def": "2,835"
+    },
+    "bonus": {
+      "hp": "+1,410",
+      "atk": "+670",
+      "def": "+590"
+    }
+  },
+  "skills": [
+    {
+      "raw_title": "超奥義：極ノ閃『零』",
+      "sistema": "super_arts",
+      "descripcion": "超奥義：極ノ閃『零』\nブレイク\n4,000\n180000%の水属性物理ダメージ。20秒間、味方全体の奥義ゲージ7UP・物理ダメージ150%UP。超奥義カットイン中にバレットアイコン1回タップで「ファントム・バレット-Kr-」発動。",
+      "orden": 1
+    },
+    {
+      "raw_title": "バレット：ファントム・バレット-Kr-",
+      "sistema": "bullet",
+      "descripcion": "バレット：ファントム・バレット-Kr-\nブレイク\n8,000\nクエスト中、2回まで使用可能。250000%の水属性物理ダメージ。100秒間、敵の物理耐性120%DOWN。1回目発動時、味方全体の奥義ゲージ200UP。2回目発動時、味方全体のHP100%回復。",
+      "orden": 2
+    },
+    {
+      "raw_title": "真奥義：裏蒼竜天翔剣『天威』",
+      "sistema": "true_arts",
+      "descripcion": "真奥義：裏蒼竜天翔剣『天威』\nブレイク\n3,300\n60000%の水属性物理ダメージ。30秒間、味方水属性ユニットのブレイク力100%UP。",
+      "orden": 3
+    },
+    {
+      "raw_title": "奥義：蒼竜剣『瞬吼』",
+      "sistema": "arts",
+      "descripcion": "奥義：蒼竜剣『瞬吼』\nブレイク\n1,500\n23000%の水属性物理ダメージ。80%の確率で7秒間、敵を絶氷状態にする。",
+      "orden": 4
+    },
+    {
+      "raw_title": "スキル：連斬『牙狼』",
+      "sistema": "skill",
+      "descripcion": "スキル：連斬『牙狼』\nブレイク\n800\nCT\n12秒\n3000%の水属性物理ダメージ。自身の状態異常(気絶・麻痺・封印・氷結以外)を回復。",
+      "orden": 5
+    }
+  ],
+  "passivas": [
+    {
+      "nombre": "準快調時奥義ゲージUPLv4",
+      "descripcion": "HP80%以上の時、奥義ゲージ4自然上昇"
+    },
+    {
+      "nombre": "聖痕の騎士",
+      "descripcion": "自身がリーダーのとき、クエスト開始から30秒間、味方全体の物理被ダメージ50%軽減(重複なし)"
+    },
+    {
+      "nombre": "麻痺耐性Lv8",
+      "descripcion": "麻痺耐性80%UP"
+    },
+    {
+      "nombre": "SPイラスト",
+      "descripcion": "クエストで得られるユニット経験値が20%UP(重複なし)。クエスト開始時、奥義ゲージ10UP(重複なし)"
+    }
+  ],
+  "rating": "SS",
+  "rol": "物理アタッカー",
+  "rareza": "覚醒～超覚醒",
+  "cv": "日野聡",
+  "imagenes_grandes": [
+    "https://img.altema.jp/grandsummoners/unit/stand/1202.jpg",
+    "https://img.altema.jp/grandsummoners/unit/stand/1203.jpg"
+  ],
+  "equipos": {
+    "inicial": [
+      {
+        "tipo": "物攻",
+        "estrellas": 5
+      },
+      {
+        "tipo": "防御",
+        "estrellas": 3
+      },
+      {
+        "tipo": "回復",
+        "estrellas": 2
+      }
+    ],
+    "maximo": [
+      {
+        "tipo": "物攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "防御",
+        "estrellas": 5
+      },
+      {
+        "tipo": "回復",
+        "estrellas": 4
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 4
+      }
+    ]
+  }
+}

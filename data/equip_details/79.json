@@ -1,0 +1,20 @@
+{
+  "id": 79,
+  "nombre": "聖なる小笛",
+  "type_label": "援護",
+  "rareza_text": "★1",
+  "stats": {
+    "hp": 10,
+    "atk": 5,
+    "def": 5
+  },
+  "obtencion": "1章 イスリーダ平原「ガナンの指導」クエストミッション 2章 コロック遊歩道「遊歩道の旅(サブクエスト：遊歩道の旅1)」のレシピから生成",
+  "skill": {
+    "descripcion": "10秒間、対象者の与ダメージを10%アップ。",
+    "ct": 20
+  },
+  "passivas": [],
+  "imagen_local": "/static/images/equips/icons/79.jpg",
+  "imagen": "https://img.altema.jp/grandsummoners/sobi/icon/79.jpg",
+  "url": "https://altema.jp/grandsummoners/sobi/79"
+}

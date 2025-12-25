@@ -1,0 +1,105 @@
+{
+  "id": 413,
+  "nombre": "デミウルゴス",
+  "imagen_grande": null,
+  "elemento": "炎",
+  "raza": "魔族",
+  "stats": {
+    "lvmax": {
+      "hp": "7,200",
+      "atk": "3,335",
+      "def": "3,336"
+    },
+    "bonus": {
+      "hp": "+1,330",
+      "atk": "+643",
+      "def": "+630"
+    }
+  },
+  "skills": [
+    {
+      "raw_title": "超奥義：悪魔の諸相：触腕の翼",
+      "sistema": "super_arts",
+      "descripcion": "超奥義：悪魔の諸相：触腕の翼\nブレイク\n2,000\n130000%の炎属性魔法ダメージ。超奥義発動時、自身のHPが80%以上の場合、自身の奥義ゲージ100UP。80秒間、味方炎属性ユニットのダメージ50%UP(重複あり)。",
+      "orden": 1
+    },
+    {
+      "raw_title": "真奥義：ゲヘナの炎",
+      "sistema": "true_arts",
+      "descripcion": "真奥義：ゲヘナの炎\nブレイク\n-\n30秒間、味方全体の被ダメージを合計10000無効化・状態異常(気絶以外)耐性100%UP。",
+      "orden": 2
+    },
+    {
+      "raw_title": "奥義：獄炎の壁",
+      "sistema": "arts",
+      "descripcion": "奥義：獄炎の壁\nブレイク\n1,200\n25000%の炎属性魔法ダメージ。30秒間、敵の魔法耐性50%DOWN。",
+      "orden": 3
+    },
+    {
+      "raw_title": "スキル：悪魔の諸相：豪魔の巨腕",
+      "sistema": "skill",
+      "descripcion": "スキル：悪魔の諸相：豪魔の巨腕\nブレイク\n500\nCT\n12秒\n3500%の炎属性魔法ダメージ。8秒間、自身の奥義ゲージ5自然上昇。",
+      "orden": 4
+    }
+  ],
+  "passivas": [
+    {
+      "nombre": "炎獄の造物主",
+      "descripcion": "自身が状態異常でない場合、ダメージ80%UP・装備CT速度20%UP"
+    },
+    {
+      "nombre": "回復量UPLv6",
+      "descripcion": "自身の回復量30%UP(吸収攻撃は除く)"
+    },
+    {
+      "nombre": "人族キラーLv5",
+      "descripcion": "人族に対してのダメージ50%UP"
+    },
+    {
+      "nombre": "SPイラスト",
+      "descripcion": "クエストで得られるユニット経験値が20%UP(重複なし)。クエスト開始時、奥義ゲージ10UP(重複なし)"
+    }
+  ],
+  "rating": "A",
+  "rol": "サブアタッカー",
+  "rareza": "覚醒～超覚醒",
+  "cv": "加藤将之",
+  "imagenes_grandes": [
+    "/static/images/units/stands/1222.jpg",
+    "/static/images/units/stands/1223.jpg"
+  ],
+  "equipos": {
+    "inicial": [
+      {
+        "tipo": "魔攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "物攻",
+        "estrellas": 3
+      },
+      {
+        "tipo": "回復",
+        "estrellas": 2
+      }
+    ],
+    "maximo": [
+      {
+        "tipo": "魔攻",
+        "estrellas": 6
+      },
+      {
+        "tipo": "物攻",
+        "estrellas": 5
+      },
+      {
+        "tipo": "回復",
+        "estrellas": 4
+      },
+      {
+        "tipo": "援護",
+        "estrellas": 4
+      }
+    ]
+  }
+}
