@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grand Summoners – Equipos</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="top-bar">
+    <a href="/" class="back-btn" title="Volver al inicio">⬅</a>
+  <h1>🛡️ Equipos</h1>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Buscar equipo..."
+  >
+
+  <button id="toggle-filters">Filtros</button>
+</div>
+
+<!-- FILTROS -->
+<div id="filters" class="hidden">
+
+  <!-- FILTRO POR TIPO -->
+  <div class="filter-group" id="filter-type">
+    <button data-type="all" class="active">Todos</button>
+    <!-- se llenan dinámicamente -->
+  </div>
+
+  <!-- FILTRO POR RAREZA -->
+  <div class="filter-group" id="filter-rarity">
+    <button data-rare="all" class="active">Todas</button>
+    <button data-rare="3">★3</button>
+    <button data-rare="4">★4</button>
+    <button data-rare="5">★5</button>
+  </div>
+</div>
+
+<!-- LOADING -->
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Cargando equipos...</p>
+</div>
+
+<!-- SKELETON -->
+<div id="skeleton-container">
+  <div class="grid">
+    <!-- 12 skeleton cards -->
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+    <div class="skeleton-card"></div>
+  </div>
+</div>
+
+<!-- GRID -->
+<div id="equip-container" class="grid hidden"></div>
+
+<!-- MODAL -->
+<div id="equip-modal" class="hidden">
+  <div class="card-container">
+    <div class="card" id="equip-card">
+      <!-- aquí JS inyecta -->
+    </div>
+  </div>
+</div>
+
+
+<script src="/static/equips.js"></script>
+</body>
+</html>

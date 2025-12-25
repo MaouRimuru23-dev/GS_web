@@ -2,77 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grand Summoners – Unidades</title>
+  <title>Grand Summoners – Home</title>
 
-  <!-- Estilos -->
   <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
+<body class="home">
 
-  <h1>📜 Lista de Unidades</h1>
-  <div id="top-bar">
-  <input id="search" type="search" placeholder="Buscar unidad..." />
-  <button id="toggle-filters">Filtros</button>
+<div class="home-container">
 
+  <h1 class="home-title">Grand Summoners</h1>
+  <p class="home-subtitle">Base de datos interactiva</p>
 
-<div id="filters" class="hidden">
-  <div class="filter-group">
-    <button data-element="all" class="active">Todos</button>
-    <button data-element="1">Fuego</button>
-    <button data-element="2">Agua</button>
-    <button data-element="3">Tierra</button>
-    <button data-element="4">Luz</button>
-    <button data-element="5">Oscuridad</button>
+  <div class="home-menu">
+
+    <a href="/units" class="home-card">
+      <div class="home-icon">🧙‍♂️</div>
+      <h2>Unidades</h2>
+      <p>Lista completa de personajes</p>
+    </a>
+
+    <a href="/equips" class="home-card">
+      <div class="home-icon">🛡️</div>
+      <h2>Equipos</h2>
+      <p>Armas, armaduras y accesorios</p>
+    </a>
+
+    <a href="#" class="home-card disabled">
+      <div class="home-icon">🎰</div>
+      <h2>Gacha</h2>
+      <p>Próximamente</p>
+    </a>
+
   </div>
 
-  <div class="filter-group">
-    <button data-rare="all" class="active">Todas</button>
-    <button data-rare="2">★1 ~ ★2</button>
-    <button data-rare="3">★2 ~ ★3</button>
-    <button data-rare="4">★3 ~ ★4</button>
-    <button data-rare="5">★4 ~ ★5</button>
-    <button data-rare="6">★5 ~ Awakening ~ Dream</button>
-    <button data-rare="7">Ascend</button>
-
-  </div>
-  <div class="filter-group" id="filter-race">
-  <button data-race="all" class="active">Todas</button>
-  <button data-race="humano">Humano</button>
-  <button data-race="gigante">Bestia</button>
-  <button data-race="dragon">Espíritu</button>
-  <button data-race="bestia">Gigante</button>
-  <button data-race="maquina">Maquina</button>
-  <button data-race="espiritu">Dragon</button>
-  <button data-race="dios">Dios</button>
-  <button data-race="demonio">Demonio</button>
 </div>
-
-</div>
-</div>
-<div id="loading" class="loading hidden">
-  <div class="spinner"></div>
-  <p>Cargando unidades...</p>
-</div>
-
-  <!-- GRID DE CARTAS -->
-  <div id="unit-container" class="grid"></div>
-<!-- MODAL BASEBALL CARD -->
-<div id="unit-modal" class="modal hidden">
-  <div class="card" id="unit-card">
-    <button id="close-modal" class="close-btn">✕</button>
-
-    <div class="card-inner">
-
-      <div class="card-face card-front" id="card-front"></div>
-      <div class="card-face card-back" id="card-back"></div>
-
-    </div>
-  </div>
-</div>
-
-  <!-- Script principal -->
-  <script src="/static/app.js"></script>
 
 </body>
 </html>

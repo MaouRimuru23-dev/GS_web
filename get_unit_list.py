@@ -3,10 +3,18 @@ from bs4 import BeautifulSoup
 import json
 import re
 from urllib.parse import urljoin
+import os
 
 BASE_URL = "https://altema.jp/grandsummoners/unitlist"
 BASE_HOST = "https://altema.jp"
 ICON_BASE = "https://img.altema.jp/grandsummoners/unit/icon/{}.jpg"
+CACHE_FILE = "data/units.json"
+ICON_LOCAL_DIR = os.path.join("static", "images", "units", "icons")
+os.makedirs(ICON_LOCAL_DIR, exist_ok=True)
+
+os.makedirs("data", exist_ok=True)
+
+
 
 HEADERS = {
     "User-Agent": (
@@ -17,6 +25,9 @@ HEADERS = {
 }
 
 def get_unit_list():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
     res = requests.get(BASE_URL, headers=HEADERS, timeout=30)
     res.raise_for_status()
 
@@ -37,6 +48,19 @@ def get_unit_list():
             continue
 
         unit_id = int(m.group(1))
+        icon_url = ICON_BASE.format(unit_id)
+        local_icon_path = os.path.join(ICON_LOCAL_DIR, f"{unit_id}.jpg")
+        local_icon_web = f"/static/images/units/icons/{unit_id}.jpg"
+
+        if not os.path.exists(local_icon_path):
+            try:
+                r = requests.get(icon_url, headers=HEADERS, timeout=20)
+                if r.status_code == 200:
+                    with open(local_icon_path, "wb") as f:
+                        f.write(r.content)
+            except Exception:
+                pass
+            
 
         a = row.select_one("td a[href^='/grandsummoners/unit/']")
         if not a:
@@ -69,18 +93,28 @@ def get_unit_list():
 
 
         units[unit_page_id] = {
-        "id": unit_page_id,
-        "unit_id": unit_id,
-        "nombre_jp": name,
-        "elemento": zokusei,
-        "rareza": rea,
-        "raza": syuzoku,
-        "imagen": ICON_BASE.format(unit_id),
-        "url": urljoin(BASE_HOST, href)
-    }
+    "id": unit_page_id,
+    "unit_id": unit_id,
+    "nombre_jp": name,
+    "elemento": zokusei,
+    "rareza": rea,
+    "raza": syuzoku,
+
+    "imagen_local": local_icon_web,   # ✅ LOCAL
+    "imagen": icon_url,               # fallback remoto
+
+    "url": urljoin(BASE_HOST, href)
+}
+
     
 
-    return list(units.values())
+    data = list(units.values())
+
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    return data
+
 
 
 if __name__ == "__main__":

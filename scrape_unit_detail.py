@@ -5,6 +5,10 @@ import json
 
 CACHE_DIR = "data/unit_details"
 os.makedirs(CACHE_DIR, exist_ok=True)
+IMAGE_LOCAL_DIR = os.path.join(
+    "static", "images", "units", "stands"
+)
+os.makedirs(IMAGE_LOCAL_DIR, exist_ok=True)
 
 
 BASE_HOST = "https://altema.jp"
@@ -113,9 +117,24 @@ def scrape_unit_detail(unit_page_id: int):
     if slider:
         for img in slider.select("img"):
             src = img.get("data-lazy-src") or img.get("src")
-            if src and src not in data["imagenes_grandes"]:
-                data["imagenes_grandes"].append(src)
-
+            if not src:
+                continue
+            
+            filename = os.path.basename(src.split("?")[0])
+            local_path = os.path.join(IMAGE_LOCAL_DIR, filename)
+            local_web = f"/static/images/units/stands/{filename}"
+    
+            if not os.path.exists(local_path):
+                try:
+                    r = requests.get(src, headers=HEADERS, timeout=30)
+                    if r.status_code == 200:
+                        with open(local_path, "wb") as f:
+                            f.write(r.content)
+                except Exception:
+                    pass
+                
+            data["imagenes_grandes"].append(local_web)
+    
 
 
     # ===============================

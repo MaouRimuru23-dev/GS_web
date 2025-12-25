@@ -46,42 +46,7 @@ const ROLES_ES = {
 function t(map, value) {
   return map[value] || value;
 }
-const JP_TERMS = {
-  "物理ダメージ": "daño físico ",
-  "魔法ダメージ": "daño mágico ",
-  "UP": "aumenta ",
-  "DOWN": "reduce ",
-  "秒間": "segundos ",
-  "味方全体": "todos los aliados ",
-  "自身": "el usuario ",
-  "(重複なし)":"(No Stackea) ",
-  "(重複あり)": "(Stackea) ",
-  "奥義ゲージ":"Barra de Arts ",
-  "超奥義":"Super Arts ",
-  "真奥義":"True Arts ",
-  "奥義": "Arts ",
-  "スキル":"Skill ",
-  "ブレイク":"BREAK ",
-  "光属性":"Elemeto Luz ",
-  "火属性":"Elemeto Fuego ",
-  "水属性":"Elemeto Agua ",
-  "樹属性":"Elemeto Tierra ",
-  "闇属性":"Elemeto Oscuridad ",
-  "の": "de ",
-  "マギアドライブ":"Magia Drive ",
-  "ロード・オブ・フェザー": "Lord of Feathers ",
-  "中": "dentro ",
-  "ダメージ":"Daño ",
-  "クエスト開始時": "Al inicio de la quest ",
-  "クエスト":"Quest ",
-  "アンリミテッド":"Magia Unlimited ",
-  "神装解放":"Divine Liberation ",
-  "バレット": "Phantom Bullet",
-  "大奥義":"Mega Arts ",
-"大スキル":"Mega Skill ",
-"カイガン": "Third Eye",
-"シンカイガン": "True Third Eye",
-};
+
 const SKILL_SECTIONS = {
   super_arts: "SUPER ARTS",
   true_arts: "TRUE ARTS",
@@ -587,12 +552,61 @@ function nombreES(nombreJP) {
 }
 
 
-function translateText(text) {
-  let result = text;
-  Object.keys(JP_TERMS).forEach(jp => {
-    result = result.replaceAll(jp, JP_TERMS[jp]);
-  });
-  return result;
+function splitEffects(jpText) {
+  return jpText
+    .replace(/。/g, "。|")
+    .split("|")
+    .map(t => t.trim())
+    .filter(Boolean);
+}
+function translateEffect(effect) {
+  return (
+    translateDamage(effect) ||
+    translateBuff(effect) ||
+    translateBreak(effect) ||
+    translateState(effect) ||
+    effect // fallback JP limpio
+  );
+}
+
+
+function translateDamage(text) {
+  const m = text.match(/(\d{1,3},?\d{3})%.*?(物理|魔法).*?(光|火|水|樹|闇)属性/);
+  if (!m) return null;
+
+  const tipo = m[2] === "物理" ? "daño físico" : "daño mágico";
+  const elemento = {
+    "光": "Luz",
+    "火": "Fuego",
+    "水": "Agua",
+    "樹": "Tierra",
+    "闇": "Oscuridad"
+  }[m[3]];
+
+  return `Inflige ${m[1]}% de ${tipo} de ${elemento}.`;
+}
+function translateBuff(text) {
+  const m = text.match(/味方全体.*?(\d+)%.*?UP.*?(\d+)秒間/);
+  if (!m) return null;
+
+  return `Aumenta el daño de todos los aliados en ${m[1]}% durante ${m[2]} segundos.`;
+}
+function translateBreak(text) {
+  const m = text.match(/BREAK\s?(\d+)/);
+  if (!m) return null;
+
+  return `Provoca ${m[1]} de BREAK.`;
+}
+function translateState(text) {
+  const m = text.match(/(\d+)秒間.*?状態/);
+  if (!m) return null;
+
+  return `Otorga un estado especial durante ${m[1]} segundos.`;
+}
+function translateSkillText(jpText) {
+  return splitEffects(jpText)
+    .map(e => "• " + translateEffect(e))
+    .join("<br>");
 }
 
 // ===============================
@@ -617,8 +631,7 @@ const loading = document.getElementById("loading");
 // FETCH INICIAL
 // ===============================
 
-loading.classList.remove("hidden");
-container.classList.add("hidden");
+const skeleton = document.getElementById("skeleton-container");
 
 fetch("/api/units")
   .then(res => {
@@ -628,18 +641,15 @@ fetch("/api/units")
   .then(data => {
     units = data;
 
-    loading.classList.add("hidden");
+    skeleton.classList.add("hidden");   // 👈 ocultar skeleton
     container.classList.remove("hidden");
 
-    applyFilters(); // o renderUnits(units)
+    applyFilters();
   })
   .catch(err => {
     console.error("Error cargando unidades:", err);
-
-    loading.innerHTML = `
-      <p style="color:#f87171">Error cargando unidades</p>
-    `;
   });
+
 
 
 // ===============================
@@ -707,10 +717,13 @@ function renderUnits(list) {
     card.style.borderColor = color;
     card.style.boxShadow = `0 0 12px ${color}`;
 
+    const imgSrc = unit.imagen_local || unit.imagen_externa;
+
     card.innerHTML = `
-      <img src="${unit.imagen}" alt="${unit.nombre_jp}" width="60" height="60">
-      <div class="name">${nombreES(unit.nombre_jp)}</div>
+      <img src="${imgSrc}" alt="${unit.nombre_jp}" width="60" height="60">
+      <div class="name">${unit.nombre_jp}</div>
     `;
+
 
     card.addEventListener("click", () => {
   openUnitCard(unit.id);
@@ -854,7 +867,7 @@ function renderAllSkills(skills) {
       html += `
         <div class="skill-item">
           <strong>${skill.raw_title}</strong>
-          <p>${translateText(skill.descripcion)}</p>
+          <p>${translateSkillText(skill.descripcion)}</p>
         </div>
       `;
     });
@@ -876,17 +889,6 @@ function agruparSkills(skills) {
 }
 
 
-  back.innerHTML = `
-    <h3>Skills</h3>
-    ${data.skills.map(s => `
-      <p><strong>${s.raw_title}</strong><br>${s.descripcion}</p>
-    `).join("")}
-
-    <h3>Passivas</h3>
-    ${data.passivas.map(p => `
-      <p><strong>${p.nombre}</strong><br>${p.descripcion}</p>
-    `).join("")}
-  `;
 
   modal.classList.remove("hidden");
   card.classList.remove("flipped");
@@ -942,35 +944,6 @@ function getSlotClass(tipo) {
 }
 
 }
-function renderSkills(skills) {
-  const groups = {};
-
-  skills.forEach(s => {
-    if (!groups[s.sistema]) groups[s.sistema] = [];
-    groups[s.sistema].push(s);
-  });
-
-  const ORDER = ["super_arts", "true_arts", "arts", "skill", "other"];
-  const TITLES = {
-    super_arts: "SUPER ARTS",
-    true_arts: "TRUE ARTS",
-    arts: "ARTS",
-    skill: "SKILL",
-    other: "OTHER"
-  };
-
-  return ORDER.filter(type => groups[type]).map(type => `
-    <div class="skill-group ${type}">
-      <h3>${TITLES[type]}</h3>
-      ${groups[type].map(s => `
-        <div class="skill-item">
-          <strong>${s.raw_title}</strong>
-          <p>${translateText(s.descripcion)}</p>
-        </div>
-      `).join("")}
-    </div>
-  `).join("");
-}
 
 
 function renderPassivas(passivas) {
@@ -983,7 +956,7 @@ function renderPassivas(passivas) {
       ${passivas.map(p => `
         <div class="passive-item">
           <strong>${p.nombre}</strong>
-          <p>${translateText(p.descripcion)}</p>
+          <p>${translateSkillText(p.descripcion)}</p>
         </div>
       `).join("")}
     </div>

@@ -591,3 +591,104 @@ h1 {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+/* ===== SKELETON UI ===== */
+
+.skeleton-card {
+  height: 140px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #1e293b 25%,
+    #334155 37%,
+    #1e293b 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+/* ===============================
+   HOME PAGE
+=============================== */
+
+body.home {
+  background: #0f1116;
+  color: #fff;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.home-subtitle {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.home-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.home-card {
+  background: #1b1e26;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.home-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.home-card.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/* ===== BACK BUTTON ===== */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1e293b;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.back-btn:hover {
+  background: #3498db;
+  transform: translateX(-2px);
+}

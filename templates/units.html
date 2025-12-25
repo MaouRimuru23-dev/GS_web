@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Summoners – Unidades</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <h1>🧙 Unidades</h1>
+
+  <div id="top-bar">
+    <a href="/" class="back-btn" title="Volver al inicio">⬅</a>
+  <input id="search" type="search" placeholder="Buscar unidad..." />
+  <button id="toggle-filters">Filtros</button>
+
+
+<div id="filters" class="hidden">
+  <div class="filter-group">
+    <button data-element="all" class="active">Todos</button>
+    <button data-element="1">Fuego</button>
+    <button data-element="2">Agua</button>
+    <button data-element="3">Tierra</button>
+    <button data-element="4">Luz</button>
+    <button data-element="5">Oscuridad</button>
+  </div>
+
+  <div class="filter-group">
+    <button data-rare="all" class="active">Todas</button>
+    <button data-rare="2">★1 ~ ★2</button>
+    <button data-rare="3">★2 ~ ★3</button>
+    <button data-rare="4">★3 ~ ★4</button>
+    <button data-rare="5">★4 ~ ★5</button>
+    <button data-rare="6">★5 ~ Awakening ~ Dream</button>
+    <button data-rare="7">Ascend</button>
+
+  </div>
+  <div class="filter-group" id="filter-race">
+  <button data-race="all" class="active">Todas</button>
+  <button data-race="humano">Humano</button>
+  <button data-race="gigante">Bestia</button>
+  <button data-race="dragon">Espíritu</button>
+  <button data-race="bestia">Gigante</button>
+  <button data-race="maquina">Maquina</button>
+  <button data-race="espiritu">Dragon</button>
+  <button data-race="dios">Dios</button>
+  <button data-race="demonio">Demonio</button>
+</div>
+
+</div>
+</div>
+<div id="loading" class="loading hidden">
+  <div class="spinner"></div>
+  <p>Cargando unidades...</p>
+</div>
+
+  <!-- GRID DE CARTAS -->
+  <div id="skeleton-container" class="grid">
+  <!-- 8–12 skeleton cards -->
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+  <div class="skeleton-card"></div>
+</div>
+
+<div id="unit-container" class="grid hidden"></div>
+
+<!-- MODAL BASEBALL CARD -->
+<div id="unit-modal" class="modal hidden">
+  <div class="card" id="unit-card">
+    <button id="close-modal" class="close-btn">✕</button>
+
+    <div class="card-inner">
+
+      <div class="card-face card-front" id="card-front"></div>
+      <div class="card-face card-back" id="card-back"></div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Script principal -->
+  <script src="/static/app.js"></script>
+
+</body>
+</html>
