@@ -724,3 +724,13 @@ body.home {
   padding: 16px;
   color: #fff;
 }
+.passivas ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.passivas li {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+  color: #ddd;
+}

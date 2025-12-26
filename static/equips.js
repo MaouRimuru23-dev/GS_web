@@ -109,17 +109,34 @@ function openEquip(id) {
   }
 
   equipCard.innerHTML = `
-    <img src="${equip.imagen || ""}">
+  <img src="${equip.imagen || ""}">
 
-        <h2>${equip.nombre}</h2>
-        <p><b>Tipo:</b> ${equip.type_label}</p>
-        <p><b>Rareza:</b> ★${equip.rareza}</p>
-        <p><b>HP:</b> ${equip.stats?.hp ?? "-"}</p>
-        <p><b>ATK:</b> ${equip.stats?.atk ?? "-"}</p>
-        <p><b>DEF:</b> ${equip.stats?.def ?? "-"}</p>
-        <p><b>Skill:</b> ${equip.skill?.descripcion ?? "-"}</p>
-        <p><b>CT:</b> ${equip.skill?.ct ?? "-"}</p>
-      `;
+  <h2>${equip.nombre}</h2>
+
+  <p><b>Tipo:</b> ${equip.type_label}</p>
+  <p><b>Rareza:</b> ${equip.rareza_text || `★${equip.rareza ?? "-"}`}</p>
+
+  <p><b>HP:</b> ${equip.stats?.hp ?? "-"}</p>
+  <p><b>ATK:</b> ${equip.stats?.atk ?? "-"}</p>
+  <p><b>DEF:</b> ${equip.stats?.def ?? "-"}</p>
+
+  <p><b>Skill:</b> ${equip.skill?.descripcion ?? "-"}</p>
+  <p><b>CT:</b> ${equip.skill?.ct ?? "-"}</p>
+
+  ${
+    equip.passivas && equip.passivas.length
+      ? `
+        <div class="passivas">
+          <p><b>Pasivas:</b></p>
+          <ul>
+            ${equip.passivas.map(p => `<li>${p}</li>`).join("")}
+          </ul>
+        </div>
+      `
+      : ""
+  }
+`;
+
       equipModal.classList.remove("hidden");
     })
     .catch(err => console.error("Error cargando equip:", err));
