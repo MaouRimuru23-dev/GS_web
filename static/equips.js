@@ -212,3 +212,4 @@ function setActive(selector, value) {
 equipModal.addEventListener("click", () => {
   equipModal.classList.add("hidden");
 });
+return data
