@@ -27,11 +27,6 @@ BASE_HOST = "https://altema.jp"
 DETAIL_PATH = "/grandsummoners/sobi/{}"
 ICON_REMOTE = "https://img.altema.jp/grandsummoners/sobi/icon/{}.jpg"
 
-CACHE_FILE = "data/equips.json"
-ICON_LOCAL_DIR = os.path.join("static", "images", "equips", "icons")
-
-os.makedirs("data", exist_ok=True)
-os.makedirs(ICON_LOCAL_DIR, exist_ok=True)
 
 HEADERS = {
     "User-Agent": (
@@ -69,9 +64,6 @@ def get_equip_list(force_refresh: bool = False):
       id, nombre_jp, rareza_num, rareza_text (si aparece), type_id, type_hint, type_label,
       imagen_local, imagen (remota), url
     """
-    if (not force_refresh) and os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
 
     res = requests.get(BASE_URL, headers=HEADERS, timeout=30)
     res.raise_for_status()
@@ -120,11 +112,6 @@ def get_equip_list(force_refresh: bool = False):
             if src and "altema.jp" in src:
                 icon_url = src
 
-        local_icon_path = os.path.join(ICON_LOCAL_DIR, f"{equip_id}.jpg")
-        local_icon_web = f"/static/images/equips/icons/{equip_id}.jpg"
-
-        _download_icon_once(equip_id, icon_url, local_icon_path)
-
         # URL detalle (si no existe en html, la construimos)
         detail_url = urljoin(BASE_HOST, DETAIL_PATH.format(equip_id))
 
@@ -140,9 +127,7 @@ def get_equip_list(force_refresh: bool = False):
             "type_id": type_id,                # num (del data-obj)
             "type_hint": TYPE_ID_HINT.get(type_id),
             "type_label": type_label,          # texto del HTML (援護, etc.)
-            "imagen_local": local_icon_web,    # cache local
             "imagen": icon_url,                # fallback remoto
-            "url": detail_url
         })
 
     # Opcional: ordenar por rareza desc, luego nombre
@@ -151,9 +136,6 @@ def get_equip_list(force_refresh: bool = False):
         n = x.get("nombre_jp") or ""
         return (-int(r), n)
     equips.sort(key=_sort_key)
-
-    with open(CACHE_FILE, "w", encoding="utf-8") as f:
-        json.dump(equips, f, ensure_ascii=False, indent=2)
 
     return equips
 

@@ -717,12 +717,13 @@ function renderUnits(list) {
     card.style.borderColor = color;
     card.style.boxShadow = `0 0 12px ${color}`;
 
-    const imgSrc = unit.imagen_local || unit.imagen_externa;
+    const imgSrc = unit.imagen;
 
-    card.innerHTML = `
-      <img src="${imgSrc}" alt="${unit.nombre_jp}" width="60" height="60">
-      <div class="name">${unit.nombre_jp}</div>
-    `;
+card.innerHTML = `
+  <img src="${imgSrc}" alt="${unit.nombre_jp}" width="60" height="60">
+  <div class="name">${unit.nombre_jp}</div>
+`;
+
 
 
     card.addEventListener("click", () => {

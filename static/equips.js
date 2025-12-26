@@ -42,7 +42,7 @@ function applyFilters() {
   const filtered = equips.filter(e => {
 
     // Tipo
-    if (currentType !== "all" && e.type_label !== currentType) {
+    if (currentType !== "all" && (e.type_label || "") !== currentType) {
       return false;
     }
 
@@ -75,8 +75,7 @@ function renderEquips(list) {
     card.className = "card";
 
     //const imgSrc = e.imagen_local || e.imagen;
-    const imgSrc = `/static/images/equips/icons/${e.id}.jpg`;
-
+    const imgSrc = e.imagen;
 
     card.innerHTML = `
       <img src="${imgSrc}" alt="${e.nombre_jp}" width="60" height="60">
@@ -84,7 +83,7 @@ function renderEquips(list) {
       <div class="meta">★${e.rareza} · ${e.type_label || ""}</div>
     `;
 
-    card.addEventListener("click", () => openEquip(e.id));
+    card.addEventListener("click", () => openEquip(e.equip_id || e.id));
 
     container.appendChild(card);
   });
@@ -94,57 +93,37 @@ function renderEquips(list) {
 // MODAL (BÁSICO)
 // ===============================
 
+const equipModal = document.getElementById("equip-modal");
+const equipCard  = document.getElementById("equip-card");
+
 function openEquip(id) {
+  console.log("CLICK EQUIP ID:", id);
   fetch(`/api/equip/${id}`)
     .then(res => res.json())
-    .then(data => {
-      showModal(data);
+    .then(equip => {
+      console.log("EQUIP DATA:", equip);
+
+  if (!equip) {
+    console.error("Equip no encontrado");
+    return;
+  }
+
+  equipCard.innerHTML = `
+    <img src="${equip.imagen || ""}">
+
+        <h2>${equip.nombre}</h2>
+        <p><b>Tipo:</b> ${equip.type_label}</p>
+        <p><b>Rareza:</b> ★${equip.rareza}</p>
+        <p><b>HP:</b> ${equip.stats?.hp ?? "-"}</p>
+        <p><b>ATK:</b> ${equip.stats?.atk ?? "-"}</p>
+        <p><b>DEF:</b> ${equip.stats?.def ?? "-"}</p>
+        <p><b>Skill:</b> ${equip.skill?.descripcion ?? "-"}</p>
+        <p><b>CT:</b> ${equip.skill?.ct ?? "-"}</p>
+      `;
+      equipModal.classList.remove("hidden");
     })
     .catch(err => console.error("Error cargando equip:", err));
 }
-
-function showModal(data) {
-  const modal = document.getElementById("card-modal");
-  const content = document.getElementById("modal-content");
-
-  content.innerHTML = `
-    <h2>${data.nombre}</h2>
-    <img src="${data.imagen_local || data.imagen}">
-    <p><b>Tipo:</b> ${data.type_label}</p>
-    <p><b>Rareza:</b> ${data.rareza_text}</p>
-    <p><b>Stats:</b>
-      HP ${data.stats.hp} /
-      ATK ${data.stats.atk} /
-      DEF ${data.stats.def}
-    </p>
-    <p><b>Skill:</b> ${data.skill.descripcion || "-"}</p>
-    <p><b>CT:</b> ${data.skill.ct ?? "-"}</p>
-  `;
-
-  modal.classList.remove("hidden");
-}
-
-document.getElementById("close-modal").onclick = () => {
-  document.getElementById("card-modal").classList.add("hidden");
-};
-const modal = document.getElementById("equip-modal");
-const card  = document.getElementById("equip-card");
-
-function showEquip(equip) {
-  card.innerHTML = `
-    <div class="card-front">
-      <img src="${equip.imagen_local || equip.imagen}">
-      <h2>${equip.nombre}</h2>
-      <p>Tipo: ${equip.tipo}</p>
-      <p>Rareza: ★${equip.rareza}</p>
-      <p>${equip.skill}</p>
-      <p>CT: ${equip.ct}</p>
-    </div>
-  `;
-
-  modal.classList.remove("hidden");
-}
-cardElement.onclick = () => showEquip(equip);
 
 // ===============================
 // FILTROS UI
@@ -170,6 +149,15 @@ function populateTypeFilter() {
     });
 
     container.appendChild(btn);
+  });
+}
+// Botón "Todos" (Tipos)
+const typeAllBtn = document.querySelector('#filter-type [data-type="all"]');
+if (typeAllBtn) {
+  typeAllBtn.addEventListener("click", () => {
+    currentType = "all";
+    setActive("[data-type]", "all");
+    applyFilters();
   });
 }
 
@@ -204,3 +192,6 @@ function setActive(selector, value) {
     }
   });
 }
+equipModal.addEventListener("click", () => {
+  equipModal.classList.add("hidden");
+});

@@ -692,3 +692,35 @@ body.home {
   background: #3498db;
   transform: translateX(-2px);
 }
+/* ===============================
+   MODAL EQUIPOS
+=============================== */
+
+#equip-modal {
+  position: fixed;
+  inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* oculto */
+#equip-modal.hidden {
+  display: none;
+}
+
+/* contenedor */
+#equip-modal .card-container {
+  max-width: 420px;
+  width: 90%;
+}
+
+/* tarjeta */
+#equip-modal .card {
+  background: #111;
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff;
+}

@@ -25,11 +25,6 @@ BASE_HOST = "https://altema.jp"
 DETAIL_URL_FMT = "https://altema.jp/grandsummoners/sobi/{}"
 ICON_REMOTE_FMT = "https://img.altema.jp/grandsummoners/sobi/icon/{}.jpg"
 
-CACHE_DIR = "data/equip_details"
-ICON_LOCAL_DIR = os.path.join("static", "images", "equips", "icons")
-
-os.makedirs(CACHE_DIR, exist_ok=True)
-os.makedirs(ICON_LOCAL_DIR, exist_ok=True)
 
 HEADERS = {
     "User-Agent": (
@@ -39,16 +34,6 @@ HEADERS = {
     )
 }
 
-def _download_icon_once(equip_id: int, remote_url: str, local_path: str) -> None:
-    if os.path.exists(local_path):
-        return
-    try:
-        r = requests.get(remote_url, headers=HEADERS, timeout=25)
-        if r.status_code == 200 and r.content:
-            with open(local_path, "wb") as f:
-                f.write(r.content)
-    except Exception:
-        pass
 
 def _parse_stats(text: str) -> dict:
     """
@@ -82,12 +67,6 @@ def _parse_ct_seconds(text: str):
     return int(m.group(1)) if m else None
 
 def scrape_equip_detail(equip_id: int, force_refresh: bool = False):
-    cache_file = os.path.join(CACHE_DIR, f"{equip_id}.json")
-
-    if (not force_refresh) and os.path.exists(cache_file):
-        with open(cache_file, "r", encoding="utf-8") as f:
-            return json.load(f)
-
     res = requests.get(BASE_URL, headers=HEADERS, timeout=30)
     res.raise_for_status()
     soup = BeautifulSoup(res.text, "html.parser")
@@ -126,10 +105,6 @@ def scrape_equip_detail(equip_id: int, force_refresh: bool = False):
         if src and "altema.jp" in src:
             icon_url = src
 
-    local_icon_path = os.path.join(ICON_LOCAL_DIR, f"{equip_id}.jpg")
-    local_icon_web = f"/static/images/equips/icons/{equip_id}.jpg"
-    _download_icon_once(equip_id, icon_url, local_icon_path)
-
     # Resultado base
     data = {
         "id": equip_id,
@@ -143,7 +118,6 @@ def scrape_equip_detail(equip_id: int, force_refresh: bool = False):
             "ct": None
         },
         "passivas": [],
-        "imagen_local": local_icon_web,
         "imagen": icon_url,
         "url": DETAIL_URL_FMT.format(equip_id)
     }
@@ -185,11 +159,6 @@ def scrape_equip_detail(equip_id: int, force_refresh: bool = False):
                     parts = re.split(r"\s*／\s*|\s*\n\s*", val)
                     parts = [p.strip() for p in parts if p.strip() and p.strip() != "-"]
                     data["passivas"] = parts
-
-    # Guardar cache
-    with open(cache_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-
     return data
 
 
