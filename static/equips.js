@@ -42,7 +42,7 @@ function applyFilters() {
   const filtered = equips.filter(e => {
 
     // Tipo
-    if (currentType !== "all" && (e.type_label || "") !== currentType) {
+    if (currentType !== "all" && e.type_label !== currentType) {
       return false;
     }
 
@@ -75,7 +75,8 @@ function renderEquips(list) {
     card.className = "card";
 
     //const imgSrc = e.imagen_local || e.imagen;
-    const imgSrc = e.imagen;
+    const imgSrc = `/static/images/equips/icons/${e.id}.jpg`;
+
 
     card.innerHTML = `
       <img src="${imgSrc}" alt="${e.nombre_jp}" width="60" height="60">
@@ -109,34 +110,17 @@ function openEquip(id) {
   }
 
   equipCard.innerHTML = `
-  <img src="${equip.imagen || ""}">
+    <img src="${equip.imagen || ""}">
 
-  <h2>${equip.nombre}</h2>
-
-  <p><b>Tipo:</b> ${equip.type_label}</p>
-  <p><b>Rareza:</b> ${equip.rareza_text || `★${equip.rareza ?? "-"}`}</p>
-
-  <p><b>HP:</b> ${equip.stats?.hp ?? "-"}</p>
-  <p><b>ATK:</b> ${equip.stats?.atk ?? "-"}</p>
-  <p><b>DEF:</b> ${equip.stats?.def ?? "-"}</p>
-
-  <p><b>Skill:</b> ${equip.skill?.descripcion ?? "-"}</p>
-  <p><b>CT:</b> ${equip.skill?.ct ?? "-"}</p>
-
-  ${
-    equip.passivas && equip.passivas.length
-      ? `
-        <div class="passivas">
-          <p><b>Pasivas:</b></p>
-          <ul>
-            ${equip.passivas.map(p => `<li>${p}</li>`).join("")}
-          </ul>
-        </div>
-      `
-      : ""
-  }
-`;
-
+        <h2>${equip.nombre}</h2>
+        <p><b>Tipo:</b> ${equip.type_label}</p>
+        <p><b>Rareza:</b> ★${equip.rareza}</p>
+        <p><b>HP:</b> ${equip.stats?.hp ?? "-"}</p>
+        <p><b>ATK:</b> ${equip.stats?.atk ?? "-"}</p>
+        <p><b>DEF:</b> ${equip.stats?.def ?? "-"}</p>
+        <p><b>Skill:</b> ${equip.skill?.descripcion ?? "-"}</p>
+        <p><b>CT:</b> ${equip.skill?.ct ?? "-"}</p>
+      `;
       equipModal.classList.remove("hidden");
     })
     .catch(err => console.error("Error cargando equip:", err));
@@ -166,15 +150,6 @@ function populateTypeFilter() {
     });
 
     container.appendChild(btn);
-  });
-}
-// Botón "Todos" (Tipos)
-const typeAllBtn = document.querySelector('#filter-type [data-type="all"]');
-if (typeAllBtn) {
-  typeAllBtn.addEventListener("click", () => {
-    currentType = "all";
-    setActive("[data-type]", "all");
-    applyFilters();
   });
 }
 
@@ -212,4 +187,3 @@ function setActive(selector, value) {
 equipModal.addEventListener("click", () => {
   equipModal.classList.add("hidden");
 });
- 
